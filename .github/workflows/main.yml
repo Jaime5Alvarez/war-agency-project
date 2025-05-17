@@ -1,34 +1,23 @@
-name: Deploy to VPS
+name: Deploy to VPS via SSH
 
 on:
   push:
-    branches: [master] 
+    branches:
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '22'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build site
-        run: npm run build
-
-      - name: Deploy via SSH
-        uses: appleboy/scp-action@v0.1.7
+      - name: Connect and deploy
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "dist/*"
-          target: "/var/www/war-agency-project"
-          strip_components: 1
+          script: |
+            cd /var/www/war-agency-project
+            git pull origin master
+            npm ci
+            npm run build
