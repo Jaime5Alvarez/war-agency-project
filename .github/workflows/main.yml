@@ -12,8 +12,10 @@ jobs:
       name: production
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      # - name: Checkout code
+      #   uses: actions/checkout@v4
+      - name: Starting execution
+        run: echo "Starting execution"
 
       - name: Connect and deploy
         uses: appleboy/ssh-action@v1.0.0
@@ -26,3 +28,5 @@ jobs:
             git pull origin master
             npm ci
             npm run build
+      - name: Ending execution
+        run: echo "Ending execution"
