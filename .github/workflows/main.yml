@@ -26,15 +26,6 @@ jobs:
           script: |
             cd /var/www/war-agency-project
             git pull origin master
-            # Verificar la instalación de Node.js
-            echo "Verificando Node.js..."
-            which node
-            node --version
-            echo "Verificando npm..."
-            which npm
-            npm --version
-            # Asegurar que Node.js está en el PATH
-            export PATH=$PATH:/usr/local/bin:/usr/bin
             npm ci
             npm run build
       - name: Ending execution
