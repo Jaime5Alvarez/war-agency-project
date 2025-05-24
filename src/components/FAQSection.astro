@@ -221,7 +221,7 @@
             
             if (otherContent && otherIcon) {
               otherContent.classList.add('max-h-0', 'opacity-0');
-              otherContent.classList.remove('max-h-96', 'opacity-100');
+              otherContent.classList.remove('max-h-screen', 'opacity-100');
               otherIcon.classList.remove('rotate-45');
               otherIcon.classList.add('rotate-0');
             }
@@ -233,14 +233,14 @@
           // Cerrar
           item.classList.remove('faq-active');
           content.classList.add('max-h-0', 'opacity-0');
-          content.classList.remove('max-h-96', 'opacity-100');
+          content.classList.remove('max-h-screen', 'opacity-100');
           icon.classList.remove('rotate-45');
           icon.classList.add('rotate-0');
         } else {
           // Abrir
           item.classList.add('faq-active');
           content.classList.remove('max-h-0', 'opacity-0');
-          content.classList.add('max-h-96', 'opacity-100');
+          content.classList.add('max-h-screen', 'opacity-100');
           icon.classList.remove('rotate-0');
           icon.classList.add('rotate-45');
         }
