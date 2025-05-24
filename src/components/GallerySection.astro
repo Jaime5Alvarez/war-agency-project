@@ -1,177 +1,181 @@
-<section id="galeria" class="py-20 px-6" style="background: #030304;">
+<section id="galeria" class="py-20 px-6 bg-war-primary">
   <div class="max-w-7xl mx-auto">
     
     <!-- Encabezado -->
     <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tight" style="color: #B0AAA6;">
-        GALERÍA DE <span style="color: #ffffff;">EXPERIENCIAS</span>
+      <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tight text-war-light">
+        GALERÍA DE <span class="text-war-white">EXPERIENCIAS</span>
       </h2>
       
-      <p class="text-lg max-w-3xl mx-auto mb-8" style="color: #605E5D;">
-        Momentos reales de nuestras experiencias. Por privacidad y seguridad, las caras han sido difuminadas.
+      <p class="text-lg max-w-3xl mx-auto mb-8 text-war-medium">
+        Vive a través de estas imágenes y videos lo que podría ser tu experiencia. Cada momento capturado es auténtico.
       </p>
       
       <!-- Filtros -->
       <div class="flex flex-wrap justify-center gap-4 mb-12">
-        <button class="filter-btn active px-4 py-2 text-sm font-bold uppercase tracking-wider border-2 transition-all duration-300" style="background: #B0AAA6; color: #030304; border-color: #B0AAA6;" data-filter="all">
-          Todas
+        <button class="px-6 py-3 border-2 font-bold uppercase tracking-wider transition-all duration-300 bg-war-light text-war-primary border-war-light" data-filter="all">
+          Todos
         </button>
-        <button class="filter-btn px-4 py-2 text-sm font-bold uppercase tracking-wider border-2 transition-all duration-300" style="color: #B0AAA6; border-color: #605E5D; background: transparent;" data-filter="weapons">
+        <button class="px-6 py-3 border-2 font-bold uppercase tracking-wider transition-all duration-300 text-war-light border-war-medium bg-transparent hover:bg-war-light hover:text-war-primary" data-filter="weapons">
           Armamento
         </button>
-        <button class="filter-btn px-4 py-2 text-sm font-bold uppercase tracking-wider border-2 transition-all duration-300" style="color: #B0AAA6; border-color: #605E5D; background: transparent;" data-filter="vehicles">
+        <button class="px-6 py-3 border-2 font-bold uppercase tracking-wider transition-all duration-300 text-war-light border-war-medium bg-transparent hover:bg-war-light hover:text-war-primary" data-filter="vehicles">
           Vehículos
         </button>
-        <button class="filter-btn px-4 py-2 text-sm font-bold uppercase tracking-wider border-2 transition-all duration-300" style="color: #B0AAA6; border-color: #605E5D; background: transparent;" data-filter="scenarios">
+        <button class="px-6 py-3 border-2 font-bold uppercase tracking-wider transition-all duration-300 text-war-light border-war-medium bg-transparent hover:bg-war-light hover:text-war-primary" data-filter="scenarios">
           Escenarios
         </button>
       </div>
     </div>
 
     <!-- Grid de galería -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <!-- Video placeholder 1 -->
-      <div class="gallery-item group relative overflow-hidden border-2 transition-all duration-300 hover:scale-105" style="border-color: #605E5D;" data-category="weapons">
-        <div class="aspect-video flex items-center justify-center" style="background: linear-gradient(135deg, #304356, #605E5D);">
+      <!-- Video 1: AK-47 -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="weapons">
+        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-cool to-war-medium">
           <div class="text-center">
-            <div class="text-4xl mb-4">🎬</div>
-            <p class="text-sm font-bold uppercase" style="color: #ffffff;">Video: Entrenamiento AK-47</p>
-            <p class="text-xs mt-2" style="color: #B0AAA6;">Caras difuminadas por privacidad</p>
+            <div class="text-6xl mb-4">🔫</div>
+            <p class="text-sm font-bold uppercase text-war-white">Video: Entrenamiento AK-47</p>
+            <p class="text-xs mt-2 text-war-light">Caras difuminadas por privacidad</p>
           </div>
         </div>
-        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-10 h-10 rounded-full flex items-center justify-center" style="background: #B0AAA6;">
-            <span style="color: #030304;">▶</span>
+        
+        <!-- Overlay de play -->
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="w-10 h-10 rounded-full flex items-center justify-center bg-war-light">
+            <span class="text-war-primary">▶</span>
           </button>
         </div>
       </div>
 
-      <!-- Imagen placeholder 2 -->
-      <div class="gallery-item group relative overflow-hidden border-2 transition-all duration-300 hover:scale-105" style="border-color: #605E5D;" data-category="vehicles">
-        <div class="aspect-video flex items-center justify-center" style="background: linear-gradient(135deg, #605E5D, #86655E);">
+      <!-- Imagen 2: Tanque -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="vehicles">
+        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-medium to-war-neutral">
           <div class="text-center">
-            <div class="text-4xl mb-4">📸</div>
-            <p class="text-sm font-bold uppercase" style="color: #ffffff;">Tanque T-55</p>
-            <p class="text-xs mt-2" style="color: #B0AAA6;">Participantes en acción</p>
+            <div class="text-6xl mb-4">🚜</div>
+            <p class="text-sm font-bold uppercase text-war-white">Tanque T-55</p>
+            <p class="text-xs mt-2 text-war-light">Participantes en acción</p>
           </div>
         </div>
-        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
       </div>
 
-      <!-- Video placeholder 3 -->
-      <div class="gallery-item group relative overflow-hidden border-2 transition-all duration-300 hover:scale-105" style="border-color: #605E5D;" data-category="scenarios">
-        <div class="aspect-video flex items-center justify-center" style="background: linear-gradient(135deg, #557D91, #304356);">
+      <!-- Video 3: Misión nocturna -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="scenarios">
+        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-blue to-war-cool">
           <div class="text-center">
-            <div class="text-4xl mb-4">🎬</div>
-            <p class="text-sm font-bold uppercase" style="color: #ffffff;">Video: Misión Nocturna</p>
-            <p class="text-xs mt-2" style="color: #B0AAA6;">Infiltración urbana</p>
+            <div class="text-6xl mb-4">🌙</div>
+            <p class="text-sm font-bold uppercase text-war-white">Video: Misión Nocturna</p>
+            <p class="text-xs mt-2 text-war-light">Infiltración urbana</p>
           </div>
         </div>
-        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-10 h-10 rounded-full flex items-center justify-center" style="background: #B0AAA6;">
-            <span style="color: #030304;">▶</span>
+        
+        <!-- Overlay de play -->
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="w-10 h-10 rounded-full flex items-center justify-center bg-war-light">
+            <span class="text-war-primary">▶</span>
           </button>
         </div>
       </div>
 
-      <!-- Imagen placeholder 4 -->
-      <div class="gallery-item group relative overflow-hidden border-2 transition-all duration-300 hover:scale-105" style="border-color: #605E5D;" data-category="weapons">
-        <div class="aspect-video flex items-center justify-center" style="background: linear-gradient(135deg, #AD8277, #86655E);">
+      <!-- Imagen 4: Rifle precisión -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="weapons">
+        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-warm to-war-neutral">
           <div class="text-center">
-            <div class="text-4xl mb-4">📸</div>
-            <p class="text-sm font-bold uppercase" style="color: #ffffff;">Rifles de Precisión</p>
-            <p class="text-xs mt-2" style="color: #B0AAA6;">Entrenamiento profesional</p>
+            <div class="text-6xl mb-4">🎯</div>
+            <p class="text-sm font-bold uppercase text-war-white">Rifles de Precisión</p>
+            <p class="text-xs mt-2 text-war-light">Entrenamiento profesional</p>
           </div>
         </div>
-        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
       </div>
 
-      <!-- Video placeholder 5 -->
-      <div class="gallery-item group relative overflow-hidden border-2 transition-all duration-300 hover:scale-105" style="border-color: #605E5D;" data-category="vehicles">
-        <div class="aspect-video flex items-center justify-center" style="background: linear-gradient(135deg, #C4BC74, #86655E);">
+      <!-- Video 5: Helicóptero -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="vehicles">
+        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-gold to-war-neutral">
           <div class="text-center">
-            <div class="text-4xl mb-4">🎬</div>
-            <p class="text-sm font-bold uppercase" style="color: #030304;">Video: Helicóptero Mi-8</p>
-            <p class="text-xs mt-2" style="color: #605E5D;">Vuelo de reconocimiento</p>
+            <div class="text-6xl mb-4">🚁</div>
+            <p class="text-sm font-bold uppercase text-war-primary">Video: Helicóptero Mi-8</p>
+            <p class="text-xs mt-2 text-war-medium">Vuelo de reconocimiento</p>
           </div>
         </div>
-        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-10 h-10 rounded-full flex items-center justify-center" style="background: #030304;">
-            <span style="color: #C4BC74;">▶</span>
+        
+        <!-- Overlay de play -->
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="w-10 h-10 rounded-full flex items-center justify-center bg-war-primary">
+            <span class="text-war-gold">▶</span>
           </button>
         </div>
       </div>
 
-      <!-- Imagen placeholder 6 -->
-      <div class="gallery-item group relative overflow-hidden border-2 transition-all duration-300 hover:scale-105" style="border-color: #605E5D;" data-category="scenarios">
-        <div class="aspect-video flex items-center justify-center" style="background: linear-gradient(135deg, #304356, #605E5D);">
+      <!-- Imagen 6: Bunker -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="scenarios">
+        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-cool to-war-medium">
           <div class="text-center">
-            <div class="text-4xl mb-4">📸</div>
-            <p class="text-sm font-bold uppercase" style="color: #ffffff;">Bunker Subterráneo</p>
-            <p class="text-xs mt-2" style="color: #B0AAA6;">Simulación táctica</p>
+            <div class="text-6xl mb-4">🏚️</div>
+            <p class="text-sm font-bold uppercase text-war-white">Bunker Subterráneo</p>
+            <p class="text-xs mt-2 text-war-light">Simulación táctica</p>
           </div>
         </div>
-        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
       </div>
 
-      <!-- Más placeholders pueden añadirse aquí -->
-      <div class="gallery-item group relative overflow-hidden border-2 transition-all duration-300 hover:scale-105" style="border-color: #605E5D;" data-category="weapons">
-        <div class="aspect-video flex items-center justify-center" style="background: linear-gradient(135deg, #B0AAA6, #605E5D);">
+      <!-- Video 7: Ametralladora -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="weapons">
+        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-light to-war-medium">
           <div class="text-center">
-            <div class="text-4xl mb-4">🎬</div>
-            <p class="text-sm font-bold uppercase" style="color: #030304;">Video: Ametralladora</p>
-            <p class="text-xs mt-2" style="color: #030304;">Tiro automático</p>
+            <div class="text-6xl mb-4">🔥</div>
+            <p class="text-sm font-bold uppercase text-war-primary">Video: Ametralladora</p>
+            <p class="text-xs mt-2 text-war-primary">Tiro automático</p>
           </div>
         </div>
-        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-10 h-10 rounded-full flex items-center justify-center" style="background: #030304;">
-            <span style="color: #B0AAA6;">▶</span>
+        
+        <!-- Overlay de play -->
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="w-10 h-10 rounded-full flex items-center justify-center bg-war-primary">
+            <span class="text-war-light">▶</span>
           </button>
         </div>
       </div>
 
-      <div class="gallery-item group relative overflow-hidden border-2 transition-all duration-300 hover:scale-105" style="border-color: #605E5D;" data-category="vehicles">
-        <div class="aspect-video flex items-center justify-center" style="background: linear-gradient(135deg, #557D91, #86655E);">
+      <!-- Imagen 8: Vehículo blindado -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="vehicles">
+        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-blue to-war-neutral">
           <div class="text-center">
-            <div class="text-4xl mb-4">📸</div>
-            <p class="text-sm font-bold uppercase" style="color: #ffffff;">Vehículo Blindado</p>
-            <p class="text-xs mt-2" style="color: #B0AAA6;">Transporte táctico</p>
+            <div class="text-6xl mb-4">🚗</div>
+            <p class="text-sm font-bold uppercase text-war-white">Vehículo Blindado</p>
+            <p class="text-xs mt-2 text-war-light">Transporte táctico</p>
           </div>
         </div>
-        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
       </div>
 
-      <div class="gallery-item group relative overflow-hidden border-2 transition-all duration-300 hover:scale-105" style="border-color: #605E5D;" data-category="scenarios">
-        <div class="aspect-video flex items-center justify-center" style="background: linear-gradient(135deg, #86655E, #AD8277);">
+      <!-- Video 9: Asalto urbano -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="scenarios">
+        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-neutral to-war-warm">
           <div class="text-center">
-            <div class="text-4xl mb-4">🎬</div>
-            <p class="text-sm font-bold uppercase" style="color: #ffffff;">Video: Asalto Urbano</p>
-            <p class="text-xs mt-2" style="color: #B0AAA6;">Combate en ciudad</p>
+            <div class="text-6xl mb-4">🏙️</div>
+            <p class="text-sm font-bold uppercase text-war-white">Video: Asalto Urbano</p>
+            <p class="text-xs mt-2 text-war-light">Combate en ciudad</p>
           </div>
         </div>
-        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-10 h-10 rounded-full flex items-center justify-center" style="background: #B0AAA6;">
-            <span style="color: #030304;">▶</span>
+        
+        <!-- Overlay de play -->
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="w-10 h-10 rounded-full flex items-center justify-center bg-war-light">
+            <span class="text-war-primary">▶</span>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- Nota de privacidad -->
-    <div class="mt-16 text-center p-8 border" style="border-color: #605E5D; background: rgba(96, 94, 93, 0.1);">
-      <div class="max-w-2xl mx-auto">
-        <h3 class="text-xl font-bold mb-4 uppercase" style="color: #ffffff;">Política de Privacidad</h3>
-        <p class="text-sm leading-relaxed" style="color: #B0AAA6;">
-          Todas las imágenes y videos han sido tratados para proteger la identidad de nuestros participantes. 
-          Respetamos la privacidad y confidencialidad de cada experiencia realizada en nuestras instalaciones.
-        </p>
-      </div>
+    <!-- Política de privacidad -->
+    <div class="mt-16 text-center p-8 border border-war-medium bg-war-medium/10">
+      <div class="text-4xl mb-4">🛡️</div>
+      <h3 class="text-xl font-bold mb-4 uppercase text-war-white">Política de Privacidad</h3>
+      <p class="text-sm leading-relaxed text-war-light">
+        Todas las imágenes y videos mostrados han sido capturados con el consentimiento expreso de los participantes.
+        Respetamos la privacidad de nuestros clientes y aplicamos técnicas de difuminado facial cuando es necesario.
+        Las experiencias mostradas son completamente auténticas y fueron realizadas en nuestras instalaciones bajo
+        supervisión profesional completa.
+      </p>
     </div>
 
   </div>

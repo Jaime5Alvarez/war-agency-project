@@ -1,174 +1,154 @@
-<section class="py-20 px-6" style="background: linear-gradient(135deg, #030304, #304356, #030304);">
-  <div class="max-w-6xl mx-auto">
+<section class="py-20 px-6 bg-gradient-to-br from-war-primary via-war-cool to-war-primary">
+  <div class="max-w-7xl mx-auto">
     
-    <!-- CTA Principal -->
+    <!-- Encabezado principal -->
     <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tight" style="color: #B0AAA6;">
-        DISEÑA TU MISIÓN. <span style="color: #ffffff;">VIVE TU COMBATE.</span>
+      <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tight text-war-light">
+        DISEÑA TU MISIÓN. <span class="text-war-white">VIVE TU COMBATE.</span>
       </h2>
       
-      <p class="text-lg md:text-xl max-w-3xl mx-auto mb-12" style="color: #605E5D;">
-        Cuéntanos qué tipo de experiencia buscas y nuestro equipo la hará realidad.
+      <p class="text-lg md:text-xl max-w-3xl mx-auto mb-12 text-war-medium">
+        Contáctanos para crear una experiencia única adaptada a ti. Nuestro equipo diseñará cada detalle de tu aventura militar.
       </p>
       
-      <!-- Botones principales -->
-      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-        <button class="group px-10 py-5 text-black font-bold text-xl uppercase tracking-wider border-2 transition-all duration-300 transform hover:scale-105" style="background: #B0AAA6; border-color: #B0AAA6;">
-          <span class="flex items-center">
-            ✉️ <span class="ml-2">Solicita tu experiencia personalizada</span>
-          </span>
-        </button>
-        
-        <button class="px-10 py-5 bg-transparent text-white font-bold text-xl uppercase tracking-wider border-2 transition-all duration-300 transform hover:scale-105" style="border-color: #605E5D;">
-          <span class="flex items-center">
-            💬 <span class="ml-2">Habla con un instructor</span>
-          </span>
-        </button>
+      <!-- Botones de acción rápida -->
+      <div class="flex flex-col md:flex-row gap-4 justify-center mb-16">
+        <a href="#formulario" class="inline-block px-8 py-4 bg-war-light border-2 border-war-light text-war-primary font-bold text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-transparent hover:text-war-light">
+          🔘 Contacta ahora
+        </a>
+        <a href="tel:+48XXXXXXX" class="inline-block px-8 py-4 border-2 border-war-medium text-war-light bg-transparent font-bold text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-war-medium hover:text-war-white">
+          📞 Llama directamente
+        </a>
       </div>
     </div>
 
-    <!-- Grid de contacto -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <!-- Grid principal de contacto -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
       
       <!-- Formulario de contacto -->
-      <div class="p-8 border-2" style="border-color: #605E5D; background: rgba(3, 3, 4, 0.6);">
-        <h3 class="text-2xl font-bold mb-6 uppercase tracking-wider" style="color: #ffffff;">
-          Formulario de Contacto
-        </h3>
-        
-        <form class="space-y-6">
-          <div>
-            <label class="block text-sm font-bold mb-2 uppercase tracking-wider" style="color: #B0AAA6;">Nombre completo</label>
-            <input type="text" class="w-full p-3 border bg-transparent transition-colors duration-300 focus:outline-none focus:border-white" style="border-color: #605E5D; color: #ffffff;" placeholder="Tu nombre">
-          </div>
+      <div id="formulario" class="lg:col-span-2">
+        <div class="p-8 border-2 border-war-medium bg-war-primary/60">
+          <h3 class="text-2xl font-bold mb-6 uppercase tracking-wider text-war-white">
+            Personaliza tu experiencia
+          </h3>
           
-          <div>
-            <label class="block text-sm font-bold mb-2 uppercase tracking-wider" style="color: #B0AAA6;">Email</label>
-            <input type="email" class="w-full p-3 border bg-transparent transition-colors duration-300 focus:outline-none focus:border-white" style="border-color: #605E5D; color: #ffffff;" placeholder="tu@email.com">
-          </div>
-          
-          <div>
-            <label class="block text-sm font-bold mb-2 uppercase tracking-wider" style="color: #B0AAA6;">Teléfono</label>
-            <input type="tel" class="w-full p-3 border bg-transparent transition-colors duration-300 focus:outline-none focus:border-white" style="border-color: #605E5D; color: #ffffff;" placeholder="+34 600 000 000">
-          </div>
-          
-          <div>
-            <label class="block text-sm font-bold mb-2 uppercase tracking-wider" style="color: #B0AAA6;">¿Qué tipo de experiencia estás buscando?</label>
-            <textarea rows="4" class="w-full p-3 border bg-transparent transition-colors duration-300 focus:outline-none focus:border-white" style="border-color: #605E5D; color: #ffffff;" placeholder="Cuéntanos en una frase..."></textarea>
-          </div>
-          
-          <div>
-            <label class="block text-sm font-bold mb-2 uppercase tracking-wider" style="color: #B0AAA6;">Nivel de experiencia</label>
-            <select class="w-full p-3 border bg-transparent transition-colors duration-300 focus:outline-none focus:border-white" style="border-color: #605E5D; color: #ffffff;">
-              <option value="" style="background: #030304;">Selecciona tu nivel</option>
-              <option value="principiante" style="background: #030304;">Principiante - Sin experiencia previa</option>
-              <option value="intermedio" style="background: #030304;">Intermedio - Algo de experiencia</option>
-              <option value="avanzado" style="background: #030304;">Avanzado - Experiencia militar/tiro</option>
-            </select>
-          </div>
-          
-          <button type="submit" class="w-full py-4 text-black font-bold text-lg uppercase tracking-wider border-2 transition-all duration-300 transform hover:scale-105" style="background: #B0AAA6; border-color: #B0AAA6;">
-            🎯 Activar misión
-          </button>
-        </form>
+          <form class="space-y-6">
+            <!-- Nombre -->
+            <div>
+              <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Nombre completo</label>
+              <input type="text" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="Tu nombre">
+            </div>
+            
+            <!-- Email -->
+            <div>
+              <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Email</label>
+              <input type="email" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="tu@email.com">
+            </div>
+            
+            <!-- Teléfono -->
+            <div>
+              <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Teléfono</label>
+              <input type="tel" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="+34 600 000 000">
+            </div>
+            
+            <!-- Experiencia deseada -->
+            <div>
+              <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">¿Qué tipo de experiencia estás buscando?</label>
+              <textarea rows="4" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium resize-none focus:outline-none focus:border-war-white" placeholder="Cuéntanos en una frase..."></textarea>
+            </div>
+            
+            <!-- Nivel de experiencia -->
+            <div>
+              <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Nivel de experiencia</label>
+              <select class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white focus:outline-none focus:border-war-white">
+                <option value="" class="bg-war-primary">Selecciona tu nivel</option>
+                <option value="principiante" class="bg-war-primary">Principiante - Sin experiencia previa</option>
+                <option value="intermedio" class="bg-war-primary">Intermedio - Algo de experiencia</option>
+                <option value="avanzado" class="bg-war-primary">Avanzado - Experiencia militar/tiro</option>
+              </select>
+            </div>
+            
+            <!-- Botón de envío -->
+            <button type="submit" class="w-full px-8 py-4 bg-war-light border-2 border-war-light text-war-primary font-bold text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-transparent hover:text-war-light">
+              🚀 Enviar solicitud
+            </button>
+          </form>
+        </div>
       </div>
-
-      <!-- Información de contacto -->
+      
+      <!-- Métodos de contacto -->
       <div class="space-y-8">
         
         <!-- Contacto directo -->
-        <div class="p-8 border-2" style="border-color: #605E5D; background: rgba(48, 67, 86, 0.2);">
-          <h3 class="text-2xl font-bold mb-6 uppercase tracking-wider" style="color: #ffffff;">
-            Contacto Directo
+        <div class="p-8 border-2 border-war-medium bg-war-cool/20">
+          <h3 class="text-2xl font-bold mb-6 uppercase tracking-wider text-war-white">
+            Contacto directo
           </h3>
           
           <div class="space-y-4">
-            <div class="flex items-center p-4 border transition-all duration-300 hover:scale-105 cursor-pointer" style="border-color: #605E5D; background: rgba(176, 170, 166, 0.1);">
-              <div class="text-3xl mr-4">📱</div>
+            <!-- WhatsApp -->
+            <div class="flex items-center p-4 border border-war-medium bg-war-light/10 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <span class="text-2xl mr-4">📱</span>
               <div>
-                <h4 class="font-bold" style="color: #ffffff;">WhatsApp</h4>
-                <p class="text-sm" style="color: #B0AAA6;">Respuesta inmediata</p>
-                <p class="text-xs" style="color: #C4BC74;">+48 XXX XXX XXX</p>
+                <h4 class="font-bold text-war-white">WhatsApp</h4>
+                <p class="text-sm text-war-light">Respuesta inmediata</p>
+                <p class="text-xs text-war-gold">+48 XXX XXX XXX</p>
               </div>
             </div>
             
-            <div class="flex items-center p-4 border transition-all duration-300 hover:scale-105 cursor-pointer" style="border-color: #605E5D; background: rgba(176, 170, 166, 0.1);">
-              <div class="text-3xl mr-4">✉️</div>
+            <!-- Email -->
+            <div class="flex items-center p-4 border border-war-medium bg-war-light/10 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <span class="text-2xl mr-4">📧</span>
               <div>
-                <h4 class="font-bold" style="color: #ffffff;">Email</h4>
-                <p class="text-sm" style="color: #B0AAA6;">Consultas detalladas</p>
-                <p class="text-xs" style="color: #C4BC74;">info@livecombatexperience.com</p>
+                <h4 class="font-bold text-war-white">Email</h4>
+                <p class="text-sm text-war-light">Consultas detalladas</p>
+                <p class="text-xs text-war-gold">info@livecombatexperience.com</p>
               </div>
             </div>
             
-            <div class="flex items-center p-4 border transition-all duration-300 hover:scale-105" style="border-color: #605E5D; background: rgba(176, 170, 166, 0.1);">
-              <div class="text-3xl mr-4">📍</div>
+            <!-- Ubicación -->
+            <div class="flex items-center p-4 border border-war-medium bg-war-light/10 transition-all duration-300 hover:scale-105">
+              <span class="text-2xl mr-4">📍</span>
               <div>
-                <h4 class="font-bold" style="color: #ffffff;">Ubicación</h4>
-                <p class="text-sm" style="color: #B0AAA6;">Polonia - Entre Breslavia y Poznan</p>
-                <p class="text-xs" style="color: #C4BC74;">Instalaciones militares homologadas</p>
+                <h4 class="font-bold text-war-white">Ubicación</h4>
+                <p class="text-sm text-war-light">Polonia - Entre Breslavia y Poznan</p>
+                <p class="text-xs text-war-gold">Instalaciones militares homologadas</p>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Idiomas disponibles -->
-        <div class="p-8 border-2" style="border-color: #605E5D; background: rgba(85, 125, 145, 0.2);">
-          <h3 class="text-xl font-bold mb-4 uppercase tracking-wider" style="color: #ffffff;">
-            Idiomas Disponibles
+        
+        <!-- Información adicional -->
+        <div class="p-8 border-2 border-war-medium bg-war-blue/20">
+          <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-war-white">
+            Lo que incluye tu experiencia
           </h3>
           
-          <div class="grid grid-cols-2 gap-4 text-sm">
-            <div class="flex items-center" style="color: #B0AAA6;">
-              <span class="mr-2">🇪🇸</span>
-              <span>Español</span>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center text-war-light">
+              <span class="mr-2">✅</span> Transporte desde el aeropuerto
             </div>
-            <div class="flex items-center" style="color: #B0AAA6;">
-              <span class="mr-2">🇬🇧</span>
-              <span>English</span>
+            <div class="flex items-center text-war-light">
+              <span class="mr-2">✅</span> Equipo de protección completo
             </div>
-            <div class="flex items-center" style="color: #B0AAA6;">
-              <span class="mr-2">🇵🇱</span>
-              <span>Polski</span>
+            <div class="flex items-center text-war-light">
+              <span class="mr-2">✅</span> Instructor personal cualificado
             </div>
-            <div class="flex items-center" style="color: #B0AAA6;">
-              <span class="mr-2">🇩🇪</span>
-              <span>Deutsch</span>
+            <div class="flex items-center text-war-light">
+              <span class="mr-2">✅</span> Certificado de participación
             </div>
           </div>
         </div>
-
-        <!-- Microcopies -->
-        <div class="p-6 text-center border" style="border-color: #605E5D; background: rgba(96, 94, 93, 0.1);">
-          <p class="text-sm mb-4 font-bold uppercase" style="color: #C4BC74;">Microcopies de Acción</p>
-          <div class="flex flex-wrap justify-center gap-3 text-xs">
-            <span class="px-3 py-1 border" style="color: #B0AAA6; border-color: #605E5D;">Estoy listo para el combate</span>
-            <span class="px-3 py-1 border" style="color: #B0AAA6; border-color: #605E5D;">Explorar armamento</span>
-            <span class="px-3 py-1 border" style="color: #B0AAA6; border-color: #605E5D;">Activar experiencia</span>
-          </div>
-        </div>
-
       </div>
     </div>
 
-    <!-- Información adicional -->
-    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-      <div class="p-6">
-        <div class="text-3xl mb-4">⚡</div>
-        <h4 class="font-bold mb-2 uppercase" style="color: #ffffff;">Respuesta en 24h</h4>
-        <p class="text-sm" style="color: #B0AAA6;">Confirmación rápida de tu reserva</p>
-      </div>
-      
-      <div class="p-6">
-        <div class="text-3xl mb-4">🎯</div>
-        <h4 class="font-bold mb-2 uppercase" style="color: #ffffff;">100% Personalizado</h4>
-        <p class="text-sm" style="color: #B0AAA6;">Cada experiencia adaptada a ti</p>
-      </div>
-      
-      <div class="p-6">
-        <div class="text-3xl mb-4">🛡️</div>
-        <h4 class="font-bold mb-2 uppercase" style="color: #ffffff;">Máxima Seguridad</h4>
-        <p class="text-sm" style="color: #B0AAA6;">Protocolos militares estándar</p>
+    <!-- Call to action final -->
+    <div class="mt-16 text-center">
+      <div class="p-6 text-center border border-war-medium bg-war-medium/10">
+        <p class="text-sm mb-4 font-bold uppercase text-war-gold">Microcopies de Acción</p>
+        <p class="text-xs text-war-light">
+          📞 <strong>Respuesta inmediata</strong> por WhatsApp • 📧 <strong>Consultas detalladas</strong> por email • 🎯 <strong>Experiencias personalizadas</strong> a medida
+        </p>
       </div>
     </div>
 

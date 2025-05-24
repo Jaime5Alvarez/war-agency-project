@@ -35,9 +35,9 @@ const { title } = Astro.props;
 		
 		<!-- Additional meta tags -->
 		<meta name="robots" content="index, follow" />
-		<meta name="theme-color" content="#B0AAA6" />
+		<meta name="theme-color" content="var(--color-war-light)" />
 	</head>
-	<body>
+	<body class="bg-war-primary text-war-light">
 		<slot />
 	</body>
 </html>
@@ -50,8 +50,6 @@ const { title } = Astro.props;
 		width: 100%;
 		height: 100%;
 		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-		background-color: #030304;
-		color: #B0AAA6;
 		overflow-x: hidden;
 	}
 	
@@ -70,15 +68,15 @@ const { title } = Astro.props;
 	}
 	
 	::-webkit-scrollbar-track {
-		background: #030304;
+		background: var(--color-war-primary);
 	}
 	
 	::-webkit-scrollbar-thumb {
-		background: #605E5D;
+		background: var(--color-war-medium);
 		border-radius: 4px;
 	}
 	
 	::-webkit-scrollbar-thumb:hover {
-		background: #B0AAA6;
+		background: var(--color-war-light);
 	}
 </style>
