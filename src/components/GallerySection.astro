@@ -1,41 +1,41 @@
-<section id="galeria" class="py-20 px-6 bg-war-primary">
+<section id="galeria" class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-war-primary">
   <div class="max-w-7xl mx-auto">
     
     <!-- Encabezado -->
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tight text-war-light font-mono uppercase">
+    <div class="text-center mb-12 sm:mb-16">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 sm:mb-8 tracking-tight text-war-light font-mono uppercase px-4">
         GALERÍA DE <span class="text-war-white">EXPERIENCIAS</span>
       </h2>
       
-      <p class="text-lg max-w-3xl mx-auto mb-8 text-war-medium">
+      <p class="text-base sm:text-lg max-w-3xl mx-auto mb-6 sm:mb-8 text-war-medium px-4">
         Vive a través de estas imágenes y videos lo que podría ser tu experiencia. Cada momento capturado es auténtico.
       </p>
       
       <!-- Filtros -->
-      <div class="flex flex-wrap justify-center gap-4 mb-12">
-        <button class="px-6 py-3 border-2 font-bold uppercase tracking-wider transition-all duration-300 bg-war-light text-war-primary border-war-light" data-filter="all">
+      <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-4">
+        <button class="px-4 sm:px-6 py-2 sm:py-3 border-2 font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 bg-war-light text-war-primary border-war-light rounded-lg sm:rounded-none" data-filter="all">
           Todos
         </button>
-        <button class="px-6 py-3 border-2 font-bold uppercase tracking-wider transition-all duration-300 text-war-light border-war-medium bg-transparent hover:bg-war-light hover:text-war-primary" data-filter="weapons">
+        <button class="px-4 sm:px-6 py-2 sm:py-3 border-2 font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 text-war-light border-war-medium bg-transparent hover:bg-war-light hover:text-war-primary rounded-lg sm:rounded-none" data-filter="weapons">
           Armamento
         </button>
-        <button class="px-6 py-3 border-2 font-bold uppercase tracking-wider transition-all duration-300 text-war-light border-war-medium bg-transparent hover:bg-war-light hover:text-war-primary" data-filter="vehicles">
+        <button class="px-4 sm:px-6 py-2 sm:py-3 border-2 font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 text-war-light border-war-medium bg-transparent hover:bg-war-light hover:text-war-primary rounded-lg sm:rounded-none" data-filter="vehicles">
           Vehículos
         </button>
-        <button class="px-6 py-3 border-2 font-bold uppercase tracking-wider transition-all duration-300 text-war-light border-war-medium bg-transparent hover:bg-war-light hover:text-war-primary" data-filter="scenarios">
+        <button class="px-4 sm:px-6 py-2 sm:py-3 border-2 font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 text-war-light border-war-medium bg-transparent hover:bg-war-light hover:text-war-primary rounded-lg sm:rounded-none" data-filter="scenarios">
           Escenarios
         </button>
       </div>
     </div>
 
     <!-- Grid de galería -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
       
       <!-- Video 1: AK-47 -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="weapons">
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="weapons">
         <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-cool to-war-medium">
-          <div class="text-center">
-            <div class="text-6xl mb-4">🔫</div>
+          <div class="text-center p-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🔫</div>
             <p class="text-sm font-bold uppercase text-war-white">Video: Entrenamiento AK-47</p>
             <p class="text-xs mt-2 text-war-light">Caras difuminadas por privacidad</p>
           </div>
@@ -43,17 +43,17 @@
         
         <!-- Overlay de play -->
         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-10 h-10 rounded-full flex items-center justify-center bg-war-light">
-            <span class="text-war-primary">▶</span>
+          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
+            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
           </button>
         </div>
       </div>
 
       <!-- Imagen 2: Tanque -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="vehicles">
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="vehicles">
         <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-medium to-war-neutral">
-          <div class="text-center">
-            <div class="text-6xl mb-4">🚜</div>
+          <div class="text-center p-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🚜</div>
             <p class="text-sm font-bold uppercase text-war-white">Tanque T-55</p>
             <p class="text-xs mt-2 text-war-light">Participantes en acción</p>
           </div>
@@ -61,10 +61,10 @@
       </div>
 
       <!-- Video 3: Misión nocturna -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="scenarios">
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="scenarios">
         <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-blue to-war-cool">
-          <div class="text-center">
-            <div class="text-6xl mb-4">🌙</div>
+          <div class="text-center p-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🌙</div>
             <p class="text-sm font-bold uppercase text-war-white">Video: Misión Nocturna</p>
             <p class="text-xs mt-2 text-war-light">Infiltración urbana</p>
           </div>
@@ -72,17 +72,17 @@
         
         <!-- Overlay de play -->
         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-10 h-10 rounded-full flex items-center justify-center bg-war-light">
-            <span class="text-war-primary">▶</span>
+          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
+            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
           </button>
         </div>
       </div>
 
       <!-- Imagen 4: Rifle precisión -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="weapons">
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="weapons">
         <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-warm to-war-neutral">
-          <div class="text-center">
-            <div class="text-6xl mb-4">🎯</div>
+          <div class="text-center p-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🎯</div>
             <p class="text-sm font-bold uppercase text-war-white">Rifles de Precisión</p>
             <p class="text-xs mt-2 text-war-light">Entrenamiento profesional</p>
           </div>
@@ -90,10 +90,10 @@
       </div>
 
       <!-- Video 5: Helicóptero -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="vehicles">
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="vehicles">
         <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-gold to-war-neutral">
-          <div class="text-center">
-            <div class="text-6xl mb-4">🚁</div>
+          <div class="text-center p-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🚁</div>
             <p class="text-sm font-bold uppercase text-war-primary">Video: Helicóptero Mi-8</p>
             <p class="text-xs mt-2 text-war-medium">Vuelo de reconocimiento</p>
           </div>
@@ -101,17 +101,17 @@
         
         <!-- Overlay de play -->
         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-10 h-10 rounded-full flex items-center justify-center bg-war-primary">
-            <span class="text-war-gold">▶</span>
+          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-primary hover:bg-war-cool transition-colors duration-300">
+            <span class="text-war-gold text-lg sm:text-xl ml-1">▶</span>
           </button>
         </div>
       </div>
 
       <!-- Imagen 6: Bunker -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="scenarios">
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="scenarios">
         <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-cool to-war-medium">
-          <div class="text-center">
-            <div class="text-6xl mb-4">🏚️</div>
+          <div class="text-center p-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🏚️</div>
             <p class="text-sm font-bold uppercase text-war-white">Bunker Subterráneo</p>
             <p class="text-xs mt-2 text-war-light">Simulación táctica</p>
           </div>
@@ -119,10 +119,10 @@
       </div>
 
       <!-- Video 7: Ametralladora -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="weapons">
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="weapons">
         <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-light to-war-medium">
-          <div class="text-center">
-            <div class="text-6xl mb-4">🔥</div>
+          <div class="text-center p-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🔥</div>
             <p class="text-sm font-bold uppercase text-war-primary">Video: Ametralladora</p>
             <p class="text-xs mt-2 text-war-primary">Tiro automático</p>
           </div>
@@ -130,17 +130,17 @@
         
         <!-- Overlay de play -->
         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-10 h-10 rounded-full flex items-center justify-center bg-war-primary">
-            <span class="text-war-light">▶</span>
+          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-primary hover:bg-war-cool transition-colors duration-300">
+            <span class="text-war-light text-lg sm:text-xl ml-1">▶</span>
           </button>
         </div>
       </div>
 
       <!-- Imagen 8: Vehículo blindado -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="vehicles">
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="vehicles">
         <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-blue to-war-neutral">
-          <div class="text-center">
-            <div class="text-6xl mb-4">🚗</div>
+          <div class="text-center p-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🚗</div>
             <p class="text-sm font-bold uppercase text-war-white">Vehículo Blindado</p>
             <p class="text-xs mt-2 text-war-light">Transporte táctico</p>
           </div>
@@ -148,10 +148,10 @@
       </div>
 
       <!-- Video 9: Asalto urbano -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105" data-category="scenarios">
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="scenarios">
         <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-neutral to-war-warm">
-          <div class="text-center">
-            <div class="text-6xl mb-4">🏙️</div>
+          <div class="text-center p-4">
+            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🏙️</div>
             <p class="text-sm font-bold uppercase text-war-white">Video: Asalto Urbano</p>
             <p class="text-xs mt-2 text-war-light">Combate en ciudad</p>
           </div>
@@ -159,18 +159,18 @@
         
         <!-- Overlay de play -->
         <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-10 h-10 rounded-full flex items-center justify-center bg-war-light">
-            <span class="text-war-primary">▶</span>
+          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
+            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
           </button>
         </div>
       </div>
     </div>
 
     <!-- Política de privacidad -->
-    <div class="mt-16 text-center p-8 border border-war-medium bg-war-medium/10">
-      <div class="text-4xl mb-4">🛡️</div>
-      <h3 class="text-xl font-bold mb-4 uppercase text-war-white">Política de Privacidad</h3>
-      <p class="text-sm leading-relaxed text-war-light">
+    <div class="text-center p-6 sm:p-8 border border-war-medium bg-war-medium/10 rounded-lg">
+      <div class="text-3xl sm:text-4xl mb-4">🛡️</div>
+      <h3 class="text-lg sm:text-xl font-bold mb-4 uppercase text-war-white">Política de Privacidad</h3>
+      <p class="text-sm leading-relaxed text-war-light max-w-4xl mx-auto">
         Todas las imágenes y videos mostrados han sido capturados con el consentimiento expreso de los participantes.
         Respetamos la privacidad de nuestros clientes y aplicamos técnicas de difuminado facial cuando es necesario.
         Las experiencias mostradas son completamente auténticas y fueron realizadas en nuestras instalaciones bajo
@@ -181,60 +181,4 @@
   </div>
 </section>
 
-<script>
-  // Filtros de galería
-  document.addEventListener('DOMContentLoaded', function() {
-    const filterBtns = document.querySelectorAll('.filter-btn') as NodeListOf<HTMLButtonElement>;
-    const galleryItems = document.querySelectorAll('.gallery-item') as NodeListOf<HTMLElement>;
-    
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', function(this: HTMLButtonElement) {
-        const filter = this.getAttribute('data-filter');
-        
-        // Actualizar botones activos
-        filterBtns.forEach(b => {
-          b.classList.remove('active');
-          (b as HTMLElement).style.background = 'transparent';
-          (b as HTMLElement).style.color = '#B0AAA6';
-        });
-        this.classList.add('active');
-        this.style.background = '#B0AAA6';
-        this.style.color = '#030304';
-        
-        // Filtrar elementos
-        galleryItems.forEach(item => {
-          if (filter === 'all' || item.getAttribute('data-category') === filter) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-      });
-    });
-  });
-</script>
 
-<style>
-  /* Animaciones para la galería */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .gallery-item {
-    animation: fadeInUp 0.6s ease-out;
-  }
-  
-  .gallery-item:nth-child(1) { animation-delay: 0.1s; }
-  .gallery-item:nth-child(2) { animation-delay: 0.2s; }
-  .gallery-item:nth-child(3) { animation-delay: 0.3s; }
-  .gallery-item:nth-child(4) { animation-delay: 0.4s; }
-  .gallery-item:nth-child(5) { animation-delay: 0.5s; }
-  .gallery-item:nth-child(6) { animation-delay: 0.6s; }
-</style> 

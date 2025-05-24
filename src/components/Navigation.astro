@@ -1,43 +1,59 @@
 <nav id="navbar" class="sticky top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out backdrop-blur-2xl border-b border-war-medium/50">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="flex items-center justify-between h-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-14 sm:h-16 lg:h-18">
       
       <!-- Logo -->
-      <div class="flex items-center">
-        <span class="text-xl font-black tracking-wider text-war-light">
+      <div class="flex items-center flex-shrink-0">
+        <span class="text-lg sm:text-xl lg:text-2xl font-black tracking-wider text-war-light">
           LIVE<span class="text-war-white">COMBAT</span>
         </span>
       </div>
 
       <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="#inicio" class="text-sm font-medium uppercase tracking-wider transition-colors duration-300 hover:scale-105 text-war-light hover:text-war-white">
+      <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+        <a href="#inicio" class="text-xs xl:text-sm font-medium uppercase tracking-wider transition-all duration-300 hover:scale-105 text-war-light hover:text-war-white py-2 px-1">
           Inicio
         </a>
-        <a href="#experiencia" class="text-sm font-medium uppercase tracking-wider transition-colors duration-300 hover:scale-105 text-war-light hover:text-war-white">
+        <a href="#experiencia" class="text-xs xl:text-sm font-medium uppercase tracking-wider transition-all duration-300 hover:scale-105 text-war-light hover:text-war-white py-2 px-1">
           Experiencia
         </a>
-        <a href="#personalizar" class="text-sm font-medium uppercase tracking-wider transition-colors duration-300 hover:scale-105 text-war-light hover:text-war-white">
+        <a href="#personalizar" class="text-xs xl:text-sm font-medium uppercase tracking-wider transition-all duration-300 hover:scale-105 text-war-light hover:text-war-white py-2 px-1">
           Personalizar
         </a>
-        <a href="#testimonios" class="text-sm font-medium uppercase tracking-wider transition-colors duration-300 hover:scale-105 text-war-light hover:text-war-white">
+        <a href="#testimonios" class="text-xs xl:text-sm font-medium uppercase tracking-wider transition-all duration-300 hover:scale-105 text-war-light hover:text-war-white py-2 px-1">
           Testimonios
         </a>
-        <a href="#galeria" class="text-sm font-medium uppercase tracking-wider transition-colors duration-300 hover:scale-105 text-war-light hover:text-war-white">
+        <a href="#galeria" class="text-xs xl:text-sm font-medium uppercase tracking-wider transition-all duration-300 hover:scale-105 text-war-light hover:text-war-white py-2 px-1">
           Galería
         </a>
-        <a href="#faq" class="text-sm font-medium uppercase tracking-wider transition-colors duration-300 hover:scale-105 text-war-light hover:text-war-white">
+        <a href="#faq" class="text-xs xl:text-sm font-medium uppercase tracking-wider transition-all duration-300 hover:scale-105 text-war-light hover:text-war-white py-2 px-1">
           FAQ
         </a>
-        <button class="px-4 py-2 text-xs font-bold uppercase tracking-wider border border-war-light bg-war-light text-war-primary transition-all duration-300 transform hover:scale-105 hover:bg-transparent hover:text-war-light">
+        <button class="px-3 xl:px-4 py-2 text-xs font-bold uppercase tracking-wider border border-war-light bg-war-light text-war-primary transition-all duration-300 transform hover:scale-105 hover:bg-transparent hover:text-war-light whitespace-nowrap">
+          Contacto
+        </button>
+      </div>
+
+      <!-- Tablet Menu (hidden on mobile, shown on md-lg) -->
+      <div class="hidden md:flex lg:hidden items-center space-x-4">
+        <a href="#inicio" class="text-xs font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white py-2 px-2">
+          Inicio
+        </a>
+        <a href="#experiencia" class="text-xs font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white py-2 px-2">
+          Experiencia
+        </a>
+        <a href="#personalizar" class="text-xs font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white py-2 px-2">
+          Personalizar
+        </a>
+        <button class="px-3 py-1.5 text-xs font-bold uppercase tracking-wider border border-war-light bg-war-light text-war-primary transition-all duration-300 transform hover:scale-105 hover:bg-transparent hover:text-war-light">
           Contacto
         </button>
       </div>
 
       <!-- Mobile Menu Button -->
       <div class="md:hidden">
-        <button id="mobile-menu-button" class="p-2 transition-colors duration-300 text-war-light hover:text-war-white">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="mobile-menu-button" class="p-2 transition-colors duration-300 text-war-light hover:text-war-white focus:outline-none focus:ring-2 focus:ring-war-light focus:ring-opacity-50">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
@@ -45,15 +61,15 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden border-t border-war-medium">
-      <div class="py-4 space-y-4">
-        <a href="#inicio" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white">Inicio</a>
-        <a href="#experiencia" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white">Experiencia</a>
-        <a href="#personalizar" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white">Personalizar</a>
-        <a href="#testimonios" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white">Testimonios</a>
-        <a href="#galeria" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white">Galería</a>
-        <a href="#faq" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white">FAQ</a>
-        <button class="w-full mt-4 px-4 py-2 text-xs font-bold uppercase tracking-wider border border-war-light bg-war-light text-war-primary transition-all duration-300 hover:bg-transparent hover:text-war-light">
+    <div id="mobile-menu" class="md:hidden hidden border-t border-war-medium/50">
+      <div class="py-4 space-y-1 max-h-96 overflow-y-auto">
+        <a href="#inicio" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white py-3 px-2 hover:bg-war-medium/20 rounded">Inicio</a>
+        <a href="#experiencia" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white py-3 px-2 hover:bg-war-medium/20 rounded">Experiencia</a>
+        <a href="#personalizar" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white py-3 px-2 hover:bg-war-medium/20 rounded">Personalizar</a>
+        <a href="#testimonios" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white py-3 px-2 hover:bg-war-medium/20 rounded">Testimonios</a>
+        <a href="#galeria" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white py-3 px-2 hover:bg-war-medium/20 rounded">Galería</a>
+        <a href="#faq" class="block text-sm font-medium uppercase tracking-wider transition-colors duration-300 text-war-light hover:text-war-white py-3 px-2 hover:bg-war-medium/20 rounded">FAQ</a>
+        <button class="w-full mt-4 px-4 py-3 text-sm font-bold uppercase tracking-wider border border-war-light bg-war-light text-war-primary transition-all duration-300 hover:bg-transparent hover:text-war-light rounded">
           Contacto
         </button>
       </div>
@@ -62,20 +78,49 @@
 </nav>
 
 <script>
-  // Mobile menu toggle
+  // Mobile menu toggle with better UX
   document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
+    const navbar = document.getElementById('navbar');
     
+    // Toggle mobile menu
     mobileMenuButton?.addEventListener('click', function() {
       mobileMenu?.classList.toggle('hidden');
+      
+      // Change hamburger icon
+      const icon = this.querySelector('svg path');
+      if (icon) {
+        if (mobileMenu?.classList.contains('hidden')) {
+          icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        } else {
+          icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+        }
+      }
     });
+
+    // Close mobile menu when clicking on links
+    const mobileLinks = mobileMenu?.querySelectorAll('a');
+    mobileLinks?.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu?.classList.add('hidden');
+        const icon = mobileMenuButton?.querySelector('svg path');
+        if (icon) {
+          icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        }
+      });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!navbar?.contains(e.target as Node)) {
+        mobileMenu?.classList.add('hidden');
+        const icon = mobileMenuButton?.querySelector('svg path');
+        if (icon) {
+          icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        }
+      }
+    });
+
   });
 </script>
-
-<style>
-  /* Smooth scroll para los enlaces */
-  html {
-    scroll-behavior: smooth;
-  }
-</style> 
