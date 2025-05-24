@@ -35,37 +35,38 @@
           <form class="space-y-6">
             <!-- Nombre -->
             <div>
-              <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Nombre completo</label>
-              <input type="text" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="Tu nombre">
+              <label for="nombre-completo" class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Nombre completo</label>
+              <input type="text" id="nombre-completo" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="Tu nombre" required>
             </div>
             
             <!-- Email -->
             <div>
-              <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Email</label>
-              <input type="email" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="tu@email.com">
+              <label for="email-contacto" class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Email</label>
+              <input type="email" id="email-contacto" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="tu@email.com" required>
             </div>
             
             <!-- Teléfono -->
             <div>
-              <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Teléfono</label>
-              <input type="tel" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="+34 600 000 000">
+              <label for="telefono-contacto" class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Teléfono</label>
+              <input type="tel" id="telefono-contacto" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="+34 600 000 000" required>
             </div>
             
             <!-- Experiencia deseada -->
             <div>
-              <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">¿Qué tipo de experiencia estás buscando?</label>
-              <textarea rows="4" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium resize-none focus:outline-none focus:border-war-white" placeholder="Cuéntanos en una frase..."></textarea>
+              <label for="experiencia-deseada" class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">¿Qué tipo de experiencia estás buscando?</label>
+              <textarea rows="4" id="experiencia-deseada" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium resize-none focus:outline-none focus:border-war-white" placeholder="Cuéntanos en una frase..." required></textarea>
             </div>
             
             <!-- Nivel de experiencia -->
             <div>
-              <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Nivel de experiencia</label>
-              <select class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white focus:outline-none focus:border-war-white">
+              <label for="experiencia-nivel" class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Nivel de experiencia</label>
+              <select id="experiencia-nivel" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white focus:outline-none focus:border-war-white" aria-describedby="experiencia-nivel-desc">
                 <option value="" class="bg-war-primary">Selecciona tu nivel</option>
                 <option value="principiante" class="bg-war-primary">Principiante - Sin experiencia previa</option>
                 <option value="intermedio" class="bg-war-primary">Intermedio - Algo de experiencia</option>
                 <option value="avanzado" class="bg-war-primary">Avanzado - Experiencia militar/tiro</option>
               </select>
+              <span id="experiencia-nivel-desc" class="sr-only">Selecciona tu nivel de experiencia con armas y combate militar</span>
             </div>
             
             <!-- Botón de envío -->
