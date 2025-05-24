@@ -1,3 +1,4 @@
 - pixelar caras de los testimonios en el video y en la sección de testimonios
 - Arreglar galeria de fotos
 - Poner fotos y videos en la galería de fotos
+- Arreglar filtro de la galería de fotos
