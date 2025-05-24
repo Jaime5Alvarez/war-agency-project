@@ -1,15 +1,41 @@
 ---
 import "../styles/global.css";
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		
+		<!-- SEO Meta Tags -->
+		<title>{title}</title>
+		<meta name="description" content="Experiencias militares reales en Polonia. Helicópteros, tanques, armamento auténtico y misiones personalizadas. Vive el combate real con instructores profesionales." />
+		<meta name="keywords" content="experiencia militar, combate real, entrenamiento militar, armamento real, Polonia, turismo militar, aventura extrema" />
+		<meta name="author" content="Live Combat Experience" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content="Vive experiencias militares reales con armamento auténtico, helicópteros y tanques en instalaciones militares de Polonia." />
+		<meta property="og:site_name" content="Live Combat Experience" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content="Experiencias militares auténticas en Polonia con instructores profesionales." />
+		
+		<!-- Additional meta tags -->
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#B0AAA6" />
 	</head>
 	<body>
 		<slot />
@@ -20,7 +46,39 @@ import "../styles/global.css";
 	html,
 	body {
 		margin: 0;
+		padding: 0;
 		width: 100%;
 		height: 100%;
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+		background-color: #030304;
+		color: #B0AAA6;
+		overflow-x: hidden;
+	}
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* Scroll suave */
+	html {
+		scroll-behavior: smooth;
+	}
+	
+	/* Personalizar scrollbar */
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+	
+	::-webkit-scrollbar-track {
+		background: #030304;
+	}
+	
+	::-webkit-scrollbar-thumb {
+		background: #605E5D;
+		border-radius: 4px;
+	}
+	
+	::-webkit-scrollbar-thumb:hover {
+		background: #B0AAA6;
 	}
 </style>

@@ -1,10 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
 import HeroSection from '../components/Hero.astro';
+import AboutSection from '../components/AboutSection.astro';
+import CustomizeSection from '../components/CustomizeSection.astro';
+import TestimonialsSection from '../components/TestimonialsSection.astro';
+import GallerySection from '../components/GallerySection.astro';
+import FAQSection from '../components/FAQSection.astro';
+import ContactSection from '../components/ContactSection.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<HeroSection />
+<Layout title="Live Combat Experience - Vive el Combate Real">
+	<Navigation />
+	<main id="inicio">
+		<HeroSection />
+		<AboutSection />
+		<CustomizeSection />
+		<TestimonialsSection />
+		<GallerySection />
+		<FAQSection />
+		<ContactSection />
+	</main>
 </Layout>
