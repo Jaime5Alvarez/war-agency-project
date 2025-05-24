@@ -14,9 +14,9 @@
       class="w-full h-full object-cover"
     ></video>
     <!-- Overlay oscuro agresivo -->
-    <div class="absolute inset-0 bg-gradient-to-br from-black/80 via-slate-900/70 to-black/90"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(135deg, #030304f0, #304356e6, #030304f5);"></div>
     <!-- Patrón de textura militar -->
-    <div class="absolute inset-0 opacity-20 bg-gradient-to-r from-transparent via-green-900/20 to-transparent"></div>
+    <div class="absolute inset-0 opacity-15" style="background: linear-gradient(45deg, transparent, #605E5D22, transparent);"></div>
   </div>
 
   <!-- Contenido principal -->
@@ -24,51 +24,50 @@
     <div class="text-center max-w-5xl mx-auto">
       
       <!-- Badge superior -->
-      <div class="inline-flex items-center px-4 py-2 mb-8 text-xs font-semibold tracking-wider text-green-400 uppercase bg-black/60 border border-green-500/30 rounded-full backdrop-blur-sm">
-        <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+      <div class="inline-flex items-center px-4 py-2 mb-8 text-xs font-semibold tracking-wider uppercase bg-black/60 border rounded-full backdrop-blur-sm" style="color: #B0AAA6; border-color: #605E5D;">
+        <span class="w-2 h-2 rounded-full mr-2 animate-pulse" style="background-color: #AD8277;"></span>
         Elite Operations
       </div>
 
       <!-- Título principal -->
-      <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 tracking-tight">
-        <span class="block bg-gradient-to-r from-white via-gray-200 to-green-400 bg-clip-text text-transparent">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tight">
+        <span class="block bg-clip-text text-transparent" style="background-image: linear-gradient(to right, #ffffff, #B0AAA6, #605E5D);">
           WAR
         </span>
-        <span class="block text-green-400 -mt-4">
+        <span class="block -mt-4" style="color: #B0AAA6;">
           AGENCY
         </span>
       </h1>
 
       <!-- Subtítulo -->
-      <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+      <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed font-light" style="color: #B0AAA6;">
         Operaciones tácticas de élite. Misiones clasificadas. 
-        <span class="text-green-400 font-semibold">Resultados garantizados.</span>
+        <span class="font-semibold" style="color: #ffffff;">Resultados garantizados.</span>
       </p>
 
       <!-- Botones de acción -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <button class="group relative px-8 py-4 bg-gradient-to-r from-green-600 to-green-500 text-white font-bold text-lg uppercase tracking-wider rounded-none border-2 border-green-500 hover:bg-transparent hover:text-green-400 transition-all duration-300 transform hover:scale-105">
+        <button class="group relative px-8 py-4 text-black font-bold text-lg uppercase tracking-wider border-2 transition-all duration-300 transform hover:scale-105" style="background: #B0AAA6; border-color: #B0AAA6;" onmouseover="this.style.backgroundColor='transparent'; this.style.color='#B0AAA6'" onmouseout="this.style.backgroundColor='#B0AAA6'; this.style.color='black'">
           <span class="relative z-10">Iniciar Misión</span>
-          <div class="absolute inset-0 bg-gradient-to-r from-green-800 to-green-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </button>
         
-        <button class="px-8 py-4 bg-transparent text-white font-bold text-lg uppercase tracking-wider border-2 border-white hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">
+        <button class="px-8 py-4 bg-transparent font-bold text-lg uppercase tracking-wider border-2 transition-all duration-300 transform hover:scale-105" style="color: #ffffff; border-color: #605E5D;" onmouseover="this.style.backgroundColor='#605E5D'; this.style.color='#ffffff'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#ffffff'">
           Ver Intel
         </button>
       </div>
 
       <!-- Indicadores de estado -->
       <div class="flex justify-center items-center mt-16 space-x-8 text-sm">
-        <div class="flex items-center text-green-400">
-          <div class="w-3 h-3 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+        <div class="flex items-center" style="color: #B0AAA6;">
+          <div class="w-3 h-3 rounded-full mr-2 animate-pulse" style="background-color: #AD8277;"></div>
           <span class="uppercase tracking-wider">Sistema Activo</span>
         </div>
-        <div class="flex items-center text-red-400">
-          <div class="w-3 h-3 bg-red-400 rounded-full mr-2"></div>
+        <div class="flex items-center" style="color: #605E5D;">
+          <div class="w-3 h-3 rounded-full mr-2" style="background-color: #C4BC74;"></div>
           <span class="uppercase tracking-wider">Área Restringida</span>
         </div>
-        <div class="flex items-center text-yellow-400">
-          <div class="w-3 h-3 bg-yellow-400 rounded-full mr-2 animate-pulse"></div>
+        <div class="flex items-center" style="color: #B0AAA6;">
+          <div class="w-3 h-3 rounded-full mr-2 animate-pulse" style="background-color: #557D91;"></div>
           <span class="uppercase tracking-wider">Nivel Alpha</span>
         </div>
       </div>
@@ -76,25 +75,37 @@
   </div>
 
   <!-- Elementos decorativos -->
-  <div class="absolute top-10 left-10 text-green-400 opacity-60">
+  <div class="absolute top-10 left-10 opacity-80" style="color: #B0AAA6;">
     <div class="text-xs font-mono uppercase tracking-widest">
       <div>Lat: 40.7128°N</div>
       <div>Lng: 74.0060°W</div>
-      <div class="mt-2">Status: <span class="text-green-400">OPERATIONAL</span></div>
+      <div class="mt-2">Status: <span style="color: #ffffff;">OPERATIONAL</span></div>
     </div>
   </div>
 
-  <div class="absolute top-10 right-10 text-green-400 opacity-60">
+  <div class="absolute top-10 right-10 opacity-80" style="color: #B0AAA6;">
     <div class="text-xs font-mono uppercase tracking-widest text-right">
-      <div>Security Level: <span class="text-red-400">CLASSIFIED</span></div>
-      <div>Access Code: <span class="text-yellow-400">ALPHA-7</span></div>
-      <div class="mt-2">Time: <span id="military-time" class="text-green-400"></span></div>
+      <div>Security Level: <span style="color: #AD8277;">CLASSIFIED</span></div>
+      <div>Access Code: <span style="color: #C4BC74;">ALPHA-7</span></div>
+      <div class="mt-2">Time: <span id="military-time" style="color: #ffffff;"></span></div>
     </div>
   </div>
 
   <!-- Líneas decorativas -->
-  <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
-  <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
+  <div class="absolute bottom-0 left-0 w-full h-1" style="background: linear-gradient(to right, transparent, #B0AAA6, transparent);"></div>
+  <div class="absolute top-0 left-0 w-full h-1" style="background: linear-gradient(to right, transparent, #605E5D, transparent);"></div>
+
+  <!-- Elementos geométricos adicionales -->
+  <div class="absolute bottom-10 left-10 opacity-30">
+    <div class="w-20 h-20 border-2 rotate-45" style="border-color: #B0AAA6;"></div>
+  </div>
+  
+  <div class="absolute bottom-10 right-10 opacity-30">
+    <div class="w-16 h-16 border-2" style="border-color: #605E5D;"></div>
+  </div>
+
+  <!-- Grid sutil de fondo -->
+  <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(#B0AAA6 1px, transparent 1px), linear-gradient(90deg, #B0AAA6 1px, transparent 1px); background-size: 50px 50px;"></div>
 </section>
 
 <script>
@@ -118,6 +129,19 @@
 </script>
 
 <style>
+  /* Variables CSS para colores dominantes blancos/grises */
+  :root {
+    --color-primary: #030304;
+    --color-dominant-light: #B0AAA6;
+    --color-dominant-medium: #605E5D;
+    --color-accent-warm: #AD8277;
+    --color-accent-cool: #304356;
+    --color-accent-neutral: #86655E;
+    --color-accent-blue: #557D91;
+    --color-accent-gold: #C4BC74;
+    --color-white: #ffffff;
+  }
+
   /* Animaciones personalizadas */
   @keyframes glitch {
     0%, 100% { transform: translateX(0); }
@@ -131,7 +155,7 @@
     animation: glitch 0.5s ease-in-out;
   }
   
-  /* Efecto de escaneo */
+  /* Efecto de escaneo con color gris dominante */
   section::before {
     content: '';
     position: absolute;
@@ -139,7 +163,7 @@
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #10b981, transparent);
+    background: linear-gradient(90deg, transparent, #B0AAA6, transparent);
     animation: scan 3s linear infinite;
     z-index: 20;
   }
@@ -147,6 +171,32 @@
   @keyframes scan {
     0% { left: -100%; }
     100% { left: 100%; }
+  }
+
+  /* Efecto de partículas sutiles con grises */
+  section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 20% 80%, #B0AAA605 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, #605E5D05 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, #ffffff03 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  /* Efecto de brillo sutil en elementos blancos */
+  @keyframes subtle-glow {
+    0%, 100% { text-shadow: 0 0 5px rgba(176, 170, 166, 0.3); }
+    50% { text-shadow: 0 0 15px rgba(255, 255, 255, 0.4); }
+  }
+  
+  h1 span:first-child {
+    animation: subtle-glow 3s ease-in-out infinite;
   }
 </style>
   
