@@ -1,4 +1,3 @@
-
 <section id="galeria" class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-war-primary relative">
   <div class="max-w-7xl mx-auto">
     
@@ -32,134 +31,189 @@
     <!-- Grid de galería -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
       
-      <!-- Video 1: AK-47 -->
+      <!-- Video 1: Disparo rifle automático -->
       <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="weapons">
-        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-cool to-war-medium">
-          <div class="text-center p-4">
-            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🔫</div>
-            <p class="text-sm font-bold uppercase text-war-white">Video: Entrenamiento AK-47</p>
-            <p class="text-xs mt-2 text-war-light">Caras difuminadas por privacidad</p>
-          </div>
+        <video 
+          class="w-full h-full object-cover aspect-video" 
+          poster="/images/samples/montando-rifles.jpeg"
+          preload="metadata"
+        >
+          <source src="/videos/samples/disparo-rifle-automatico.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Overlay de información -->
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
+          <p class="text-sm font-bold uppercase text-war-light">Entrenamiento Rifle Automático</p>
+          <p class="text-xs mt-1 text-war-medium">Técnicas de tiro profesional</p>
         </div>
         
         <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
           <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
             <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
           </button>
         </div>
       </div>
 
-      <!-- Imagen 2: Tanque -->
+      <!-- Imagen 2: Helicóptero -->
       <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="vehicles">
-        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-medium to-war-neutral">
-          <div class="text-center p-4">
-            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🚜</div>
-            <p class="text-sm font-bold uppercase text-war-white">Tanque T-55</p>
-            <p class="text-xs mt-2 text-war-light">Participantes en acción</p>
-          </div>
+        <img 
+          src="/images/samples/helicoptero.jpeg" 
+          alt="Helicóptero militar en demostración" 
+          class="w-full h-full object-cover aspect-video"
+        >
+        
+        <!-- Overlay de información -->
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
+          <p class="text-sm font-bold uppercase text-war-light">Helicóptero Militar</p>
+          <p class="text-xs mt-1 text-war-medium">Experiencia de vuelo táctica</p>
         </div>
       </div>
 
-      <!-- Video 3: Misión nocturna -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="scenarios">
-        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-blue to-war-cool">
-          <div class="text-center p-4">
-            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🌙</div>
-            <p class="text-sm font-bold uppercase text-war-white">Video: Misión Nocturna</p>
-            <p class="text-xs mt-2 text-war-light">Infiltración urbana</p>
-          </div>
+      <!-- Video 3: Demostración helicóptero -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="vehicles">
+        <video 
+          class="w-full h-full object-cover aspect-video" 
+          poster="/images/samples/helicoptero.jpeg"
+          preload="metadata"
+        >
+          <source src="/videos/samples/helicoptero-demostration.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Overlay de información -->
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
+          <p class="text-sm font-bold uppercase text-war-light">Video: Demostración Aérea</p>
+          <p class="text-xs mt-1 text-war-medium">Vuelo de reconocimiento</p>
         </div>
         
         <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
+          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-gold hover:bg-war-light transition-colors duration-300">
+            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Imagen 4: Rifle francotirador -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="weapons">
+        <img 
+          src="/images/samples/rifle-francotirador.jpeg" 
+          alt="Rifle de francotirador" 
+          class="w-full h-full object-cover aspect-video"
+        >
+        
+        <!-- Overlay de información -->
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
+          <p class="text-sm font-bold uppercase text-war-light">Rifle de Precisión</p>
+          <p class="text-xs mt-1 text-war-medium">Entrenamiento de francotirador</p>
+        </div>
+      </div>
+
+      <!-- Video 5: Disparo metralladora -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="weapons">
+        <video 
+          class="w-full h-full object-cover aspect-video" 
+          poster="/images/samples/muestra-armas.jpeg"
+          preload="metadata"
+        >
+          <source src="/videos/samples/disparo-metralladora.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Overlay de información -->
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
+          <p class="text-sm font-bold uppercase text-war-light">Video: Ametralladora</p>
+          <p class="text-xs mt-1 text-war-medium">Fuego automático pesado</p>
+        </div>
+        
+        <!-- Overlay de play -->
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
           <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
             <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
           </button>
         </div>
       </div>
 
-      <!-- Imagen 4: Rifle precisión -->
+      <!-- Video 6: Disparo calibre 50 -->
       <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="weapons">
-        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-warm to-war-neutral">
-          <div class="text-center p-4">
-            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🎯</div>
-            <p class="text-sm font-bold uppercase text-war-white">Rifles de Precisión</p>
-            <p class="text-xs mt-2 text-war-light">Entrenamiento profesional</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Video 5: Helicóptero -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="vehicles">
-        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-gold to-war-neutral">
-          <div class="text-center p-4">
-            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🚁</div>
-            <p class="text-sm font-bold uppercase text-war-primary">Video: Helicóptero Mi-8</p>
-            <p class="text-xs mt-2 text-war-medium">Vuelo de reconocimiento</p>
-          </div>
+        <video 
+          class="w-full h-full object-cover aspect-video" 
+          poster="/images/samples/rifle-francotirador-2.jpeg"
+          preload="metadata"
+        >
+          <source src="/videos/samples/disparo-calibre-50.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Overlay de información -->
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
+          <p class="text-sm font-bold uppercase text-war-light">Video: Calibre .50</p>
+          <p class="text-xs mt-1 text-war-medium">Potencia máxima</p>
         </div>
         
         <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-primary hover:bg-war-cool transition-colors duration-300">
-            <span class="text-war-gold text-lg sm:text-xl ml-1">▶</span>
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
+          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
+            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
           </button>
         </div>
       </div>
 
-      <!-- Imagen 6: Bunker -->
+      <!-- Video 7: Disparo en campo abierto -->
       <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="scenarios">
-        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-cool to-war-medium">
-          <div class="text-center p-4">
-            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🏚️</div>
-            <p class="text-sm font-bold uppercase text-war-white">Bunker Subterráneo</p>
-            <p class="text-xs mt-2 text-war-light">Simulación táctica</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Video 7: Ametralladora -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="weapons">
-        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-light to-war-medium">
-          <div class="text-center p-4">
-            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🔥</div>
-            <p class="text-sm font-bold uppercase text-war-primary">Video: Ametralladora</p>
-            <p class="text-xs mt-2 text-war-primary">Tiro automático</p>
-          </div>
+        <video 
+          class="w-full h-full object-cover aspect-video" 
+          poster="/images/samples/montando-rifles.jpeg"
+          preload="metadata"
+        >
+          <source src="/videos/samples/disparo-en-campo-abierto.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Overlay de información -->
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
+          <p class="text-sm font-bold uppercase text-war-light">Video: Campo Abierto</p>
+          <p class="text-xs mt-1 text-war-medium">Entrenamiento en terreno</p>
         </div>
         
         <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-primary hover:bg-war-cool transition-colors duration-300">
-            <span class="text-war-light text-lg sm:text-xl ml-1">▶</span>
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
+          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
+            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
           </button>
         </div>
       </div>
 
-      <!-- Imagen 8: Vehículo blindado -->
-      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="vehicles">
-        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-blue to-war-neutral">
-          <div class="text-center p-4">
-            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🚗</div>
-            <p class="text-sm font-bold uppercase text-war-white">Vehículo Blindado</p>
-            <p class="text-xs mt-2 text-war-light">Transporte táctico</p>
-          </div>
+      <!-- Imagen 8: Muestra de armas -->
+      <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="weapons">
+        <img 
+          src="/images/samples/muestra-armas.jpeg" 
+          alt="Colección de armamento militar" 
+          class="w-full h-full object-cover aspect-video"
+        >
+        
+        <!-- Overlay de información -->
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
+          <p class="text-sm font-bold uppercase text-war-light">Arsenal Completo</p>
+          <p class="text-xs mt-1 text-war-medium">Variedad de armamento disponible</p>
         </div>
       </div>
 
-      <!-- Video 9: Asalto urbano -->
+      <!-- Video 9: Disparo grupo de fusiles -->
       <div class="gallery-item group relative overflow-hidden border border-war-medium transition-all duration-300 hover:scale-105 rounded-lg" data-category="scenarios">
-        <div class="aspect-video flex items-center justify-center bg-gradient-to-br from-war-neutral to-war-warm">
-          <div class="text-center p-4">
-            <div class="text-4xl sm:text-5xl lg:text-6xl mb-4">🏙️</div>
-            <p class="text-sm font-bold uppercase text-war-white">Video: Asalto Urbano</p>
-            <p class="text-xs mt-2 text-war-light">Combate en ciudad</p>
-          </div>
+        <video 
+          class="w-full h-full object-cover aspect-video" 
+          poster="/images/samples/entrada-escopeta.jpeg"
+          preload="metadata"
+        >
+          <source src="/videos/samples/disparo-grupo-fusiles.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Overlay de información -->
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
+          <p class="text-sm font-bold uppercase text-war-light">Video: Entrenamiento Grupal</p>
+          <p class="text-xs mt-1 text-war-medium">Coordinated firing exercise</p>
         </div>
         
         <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
           <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
             <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
           </button>
@@ -181,5 +235,100 @@
 
   </div>
 </section>
+
+<script>
+  // Funcionalidad de filtros de galería
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('[data-filter]');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function(this: HTMLElement) {
+        const filter = this.getAttribute('data-filter');
+        
+        // Actualizar botones activos
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-war-light', 'text-war-primary');
+          btn.classList.add('bg-transparent', 'text-war-light', 'border-war-medium');
+        });
+        
+        this.classList.remove('bg-transparent', 'text-war-light', 'border-war-medium');
+        this.classList.add('bg-war-light', 'text-war-primary', 'border-war-light');
+        
+        // Filtrar elementos
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          const htmlItem = item as HTMLElement;
+          
+          if (filter === 'all' || category === filter) {
+            htmlItem.style.display = 'block';
+            htmlItem.style.opacity = '0';
+            setTimeout(() => {
+              htmlItem.style.opacity = '1';
+            }, 100);
+          } else {
+            htmlItem.style.opacity = '0';
+            setTimeout(() => {
+              htmlItem.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Funcionalidad de videos
+    const videos = document.querySelectorAll('video');
+    
+    videos.forEach(video => {
+      video.addEventListener('click', function(this: HTMLVideoElement) {
+        if (this.paused) {
+          this.play();
+          // Ocultar el overlay de play si existe
+          const overlay = this.parentElement?.querySelector('.absolute.inset-0.bg-black\\/50') as HTMLElement;
+          if (overlay) overlay.style.display = 'none';
+        } else {
+          this.pause();
+        }
+      });
+
+      // Mostrar controles al hacer hover
+      video.addEventListener('mouseenter', function(this: HTMLVideoElement) {
+        this.setAttribute('controls', 'true');
+      });
+
+      video.addEventListener('mouseleave', function(this: HTMLVideoElement) {
+        if (this.paused) {
+          this.removeAttribute('controls');
+        }
+      });
+
+      // Reiniciar overlay cuando termine el video
+      video.addEventListener('ended', function(this: HTMLVideoElement) {
+        const overlay = this.parentElement?.querySelector('.absolute.inset-0.bg-black\\/50') as HTMLElement;
+        if (overlay) overlay.style.display = 'flex';
+        this.removeAttribute('controls');
+      });
+    });
+
+    // Lazy loading para videos
+    const videoElements = document.querySelectorAll('video[preload="metadata"]');
+    
+    if ('IntersectionObserver' in window) {
+      const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const video = entry.target as HTMLVideoElement;
+            video.preload = 'metadata';
+            videoObserver.unobserve(video);
+          }
+        });
+      });
+
+      videoElements.forEach(video => {
+        videoObserver.observe(video);
+      });
+    }
+  });
+</script>
 
 
