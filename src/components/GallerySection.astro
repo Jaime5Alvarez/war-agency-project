@@ -46,13 +46,6 @@
           <p class="text-sm font-bold uppercase text-war-light">Entrenamiento Rifle Automático</p>
           <p class="text-xs mt-1 text-war-medium">Técnicas de tiro profesional</p>
         </div>
-        
-        <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
-          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
-            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
-          </button>
-        </div>
       </div>
 
       <!-- Imagen 2: Helicóptero -->
@@ -84,13 +77,6 @@
         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
           <p class="text-sm font-bold uppercase text-war-light">Video: Demostración Aérea</p>
           <p class="text-xs mt-1 text-war-medium">Vuelo de reconocimiento</p>
-        </div>
-        
-        <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
-          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-gold hover:bg-war-light transition-colors duration-300">
-            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
-          </button>
         </div>
       </div>
 
@@ -124,13 +110,6 @@
           <p class="text-sm font-bold uppercase text-war-light">Video: Ametralladora</p>
           <p class="text-xs mt-1 text-war-medium">Fuego automático pesado</p>
         </div>
-        
-        <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
-          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
-            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
-          </button>
-        </div>
       </div>
 
       <!-- Video 6: Disparo calibre 50 -->
@@ -148,13 +127,6 @@
           <p class="text-sm font-bold uppercase text-war-light">Video: Calibre .50</p>
           <p class="text-xs mt-1 text-war-medium">Potencia máxima</p>
         </div>
-        
-        <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
-          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
-            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
-          </button>
-        </div>
       </div>
 
       <!-- Video 7: Disparo en campo abierto -->
@@ -171,13 +143,6 @@
         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4">
           <p class="text-sm font-bold uppercase text-war-light">Video: Campo Abierto</p>
           <p class="text-xs mt-1 text-war-medium">Entrenamiento en terreno</p>
-        </div>
-        
-        <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
-          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
-            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
-          </button>
         </div>
       </div>
 
@@ -211,13 +176,6 @@
           <p class="text-sm font-bold uppercase text-war-light">Video: Entrenamiento Grupal</p>
           <p class="text-xs mt-1 text-war-medium">Coordinated firing exercise</p>
         </div>
-        
-        <!-- Overlay de play -->
-        <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" onclick="this.previousElementSibling.previousElementSibling.play(); this.style.display='none';">
-          <button class="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center bg-war-light hover:bg-war-white transition-colors duration-300">
-            <span class="text-war-primary text-lg sm:text-xl ml-1">▶</span>
-          </button>
-        </div>
       </div>
     </div>
 
@@ -234,14 +192,67 @@
     </div>
 
   </div>
+
+  <!-- Modal/Lightbox para galería -->
+  <div id="galleryModal" class="fixed inset-0 bg-black/95 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+    <div class="relative max-w-7xl max-h-full w-full h-full flex items-center justify-center">
+      
+      <!-- Botón de cerrar -->
+      <button id="closeModal" class="absolute top-4 right-4 z-60 w-12 h-12 rounded-full bg-war-light hover:bg-war-white transition-colors duration-300 flex items-center justify-center group">
+        <span class="text-war-primary text-xl font-bold group-hover:scale-110 transition-transform duration-300">✕</span>
+      </button>
+      
+      <!-- Información del contenido -->
+      <div id="modalInfo" class="absolute top-4 left-4 z-60 bg-black/80 backdrop-blur-sm rounded-lg p-4 max-w-md">
+        <h3 id="modalTitle" class="text-lg font-bold uppercase text-war-light mb-2"></h3>
+        <p id="modalDescription" class="text-sm text-war-medium"></p>
+        <div id="modalCategory" class="inline-block mt-2 px-3 py-1 bg-war-medium/30 rounded-full text-xs uppercase font-bold text-war-light"></div>
+      </div>
+
+      <!-- Controles de navegación -->
+      <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-60 w-12 h-12 rounded-full bg-war-light/80 hover:bg-war-light transition-colors duration-300 flex items-center justify-center group">
+        <span class="text-war-primary text-xl font-bold group-hover:scale-110 transition-transform duration-300">‹</span>
+      </button>
+      
+      <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-60 w-12 h-12 rounded-full bg-war-light/80 hover:bg-war-light transition-colors duration-300 flex items-center justify-center group">
+        <span class="text-war-primary text-xl font-bold group-hover:scale-110 transition-transform duration-300">›</span>
+      </button>
+
+      <!-- Contenedor del contenido -->
+      <div id="modalContent" class="w-full h-full flex items-center justify-center">
+        <!-- El contenido se insertará aquí dinámicamente -->
+      </div>
+      
+    </div>
+  </div>
 </section>
 
 <script>
-  // Funcionalidad de filtros de galería
+  // Funcionalidad de filtros de galería y lightbox
   document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('[data-filter]');
     const galleryItems = document.querySelectorAll('.gallery-item');
+    const modal = document.getElementById('galleryModal');
+    const modalContent = document.getElementById('modalContent');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalCategory = document.getElementById('modalCategory');
+    const closeModal = document.getElementById('closeModal');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    let currentItemIndex = 0;
+    let visibleItems = [];
 
+    // Función para obtener elementos visibles
+    function getVisibleItems() {
+      return Array.from(galleryItems).filter(item => {
+        const style = window.getComputedStyle(item);
+        return style.display !== 'none' && style.opacity !== '0';
+      });
+    }
+
+    // Funcionalidad de filtros
     filterButtons.forEach(button => {
       button.addEventListener('click', function(this: HTMLElement) {
         const filter = this.getAttribute('data-filter');
@@ -273,44 +284,153 @@
             }, 300);
           }
         });
+
+        // Actualizar elementos visibles para navegación
+        setTimeout(() => {
+          visibleItems = getVisibleItems();
+        }, 400);
       });
     });
 
-    // Funcionalidad de videos
-    const videos = document.querySelectorAll('video');
-    
-    videos.forEach(video => {
-      video.addEventListener('click', function(this: HTMLVideoElement) {
-        if (this.paused) {
-          this.play();
-          // Ocultar el overlay de play si existe
-          const overlay = this.parentElement?.querySelector('.absolute.inset-0.bg-black\\/50') as HTMLElement;
-          if (overlay) overlay.style.display = 'none';
-        } else {
-          this.pause();
+    // Función para abrir el modal
+    function openModal(index: number) {
+      visibleItems = getVisibleItems();
+      currentItemIndex = index;
+      
+      const item = visibleItems[currentItemIndex];
+      const video = item.querySelector('video') as HTMLVideoElement;
+      const img = item.querySelector('img') as HTMLImageElement;
+      
+      // Limpiar contenido anterior
+      modalContent!.innerHTML = '';
+      
+      // Obtener información del elemento
+      const infoDiv = item.querySelector('.absolute.bottom-0') as HTMLElement;
+      const titleElement = infoDiv?.querySelector('p:first-child') as HTMLElement;
+      const descElement = infoDiv?.querySelector('p:last-child') as HTMLElement;
+      const category = item.getAttribute('data-category');
+      
+      // Actualizar información del modal
+      if (modalTitle) modalTitle.textContent = titleElement?.textContent || '';
+      if (modalDescription) modalDescription.textContent = descElement?.textContent || '';
+      if (modalCategory) {
+        modalCategory.textContent = category === 'weapons' ? 'ARMAMENTO' : 
+                                   category === 'vehicles' ? 'VEHÍCULOS' : 'ESCENARIOS';
+      }
+      
+      if (video) {
+        // Crear nuevo elemento de video para el modal
+        const modalVideo = document.createElement('video');
+        modalVideo.className = 'max-w-full max-h-full object-contain rounded-lg';
+        modalVideo.controls = true;
+        modalVideo.autoplay = true;
+        modalVideo.src = video.querySelector('source')?.src || '';
+        
+        modalContent!.appendChild(modalVideo);
+      } else if (img) {
+        // Crear nuevo elemento de imagen para el modal
+        const modalImg = document.createElement('img');
+        modalImg.className = 'max-w-full max-h-full object-contain rounded-lg';
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        
+        modalContent!.appendChild(modalImg);
+      }
+      
+      // Mostrar modal
+      modal!.classList.remove('hidden');
+      modal!.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      
+      // Actualizar visibilidad de botones de navegación
+      updateNavigationButtons();
+    }
+
+    // Función para cerrar el modal
+    function closeModalFunction() {
+      modal!.classList.add('hidden');
+      modal!.classList.remove('flex');
+      document.body.style.overflow = '';
+      
+      // Pausar videos si hay alguno reproduciéndose
+      const modalVideo = modalContent!.querySelector('video') as HTMLVideoElement;
+      if (modalVideo) {
+        modalVideo.pause();
+      }
+    }
+
+    // Función para navegación
+    function navigateModal(direction: number) {
+      const newIndex = currentItemIndex + direction;
+      if (newIndex >= 0 && newIndex < visibleItems.length) {
+        openModal(newIndex);
+      }
+    }
+
+    // Función para actualizar botones de navegación
+    function updateNavigationButtons() {
+      if (prevBtn) prevBtn.style.display = currentItemIndex > 0 ? 'flex' : 'none';
+      if (nextBtn) nextBtn.style.display = currentItemIndex < visibleItems.length - 1 ? 'flex' : 'none';
+    }
+
+    // Event listeners para elementos de galería
+    galleryItems.forEach((item, index) => {
+      // Remover los overlays de play existentes ya que ahora abriremos el modal
+      const playOverlay = item.querySelector('.absolute.inset-0.bg-black\\/50');
+      if (playOverlay) {
+        playOverlay.remove();
+      }
+      
+      // Hacer toda la tarjeta clickeable
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Obtener el índice entre los elementos visibles
+        visibleItems = getVisibleItems();
+        const visibleIndex = visibleItems.indexOf(item as Element);
+        if (visibleIndex !== -1) {
+          openModal(visibleIndex);
         }
       });
-
-      // Mostrar controles al hacer hover
-      video.addEventListener('mouseenter', function(this: HTMLVideoElement) {
-        this.setAttribute('controls', 'true');
-      });
-
-      video.addEventListener('mouseleave', function(this: HTMLVideoElement) {
-        if (this.paused) {
-          this.removeAttribute('controls');
-        }
-      });
-
-      // Reiniciar overlay cuando termine el video
-      video.addEventListener('ended', function(this: HTMLVideoElement) {
-        const overlay = this.parentElement?.querySelector('.absolute.inset-0.bg-black\\/50') as HTMLElement;
-        if (overlay) overlay.style.display = 'flex';
-        this.removeAttribute('controls');
-      });
+      
+      // Agregar cursor pointer
+      (item as HTMLElement).style.cursor = 'pointer';
     });
 
-    // Lazy loading para videos
+    // Event listeners para el modal
+    closeModal?.addEventListener('click', closeModalFunction);
+    prevBtn?.addEventListener('click', () => navigateModal(-1));
+    nextBtn?.addEventListener('click', () => navigateModal(1));
+
+    // Cerrar modal al hacer clic fuera del contenido
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModalFunction();
+      }
+    });
+
+    // Navegación con teclado
+    document.addEventListener('keydown', (e) => {
+      if (!modal?.classList.contains('hidden')) {
+        switch(e.key) {
+          case 'Escape':
+            closeModalFunction();
+            break;
+          case 'ArrowLeft':
+            navigateModal(-1);
+            break;
+          case 'ArrowRight':
+            navigateModal(1);
+            break;
+        }
+      }
+    });
+
+    // Inicializar elementos visibles
+    visibleItems = getVisibleItems();
+
+    // Lazy loading para videos (mantener funcionalidad original)
     const videoElements = document.querySelectorAll('video[preload="metadata"]');
     
     if ('IntersectionObserver' in window) {
