@@ -3,3 +3,4 @@
 - Poner fotos y videos en la galería de fotos
 - Arreglar filtro de la galería de fotos
 - Intentar que el vídeo de heroe tenga un poco más de protagonismo
+- funcionar para recoger leads
