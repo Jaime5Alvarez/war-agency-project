@@ -1,0 +1,208 @@
+<section id="video-showcase" class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-war-primary via-war-cool to-war-primary relative overflow-hidden">
+  <div class="max-w-7xl mx-auto relative z-10">
+    
+    <!-- Encabezado impactante -->
+    <div class="text-center mb-8 sm:mb-12">
+      <div class="inline-flex items-center px-4 py-2 mb-6 text-xs font-semibold tracking-wider uppercase bg-war-warm/20 border border-war-warm rounded-full backdrop-blur-sm text-war-warm">
+        <span class="w-2 h-2 bg-war-warm rounded-full mr-2 animate-pulse"></span>
+        <span>EXPERIENCIA REAL CAPTURADA</span>
+      </div>
+      
+      <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 text-war-light font-mono uppercase tracking-tight">
+        ESTO ES LO QUE <span class="text-war-white">VIVIRÁS</span>
+      </h2>
+      
+      <p class="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-war-medium">
+        No hay efectos especiales. No hay actuación. Este es el video real de una de nuestras experiencias de combate.
+      </p>
+    </div>
+
+    <!-- Video principal con controles -->
+    <div class="relative mb-12 sm:mb-16">
+      <div class="relative aspect-video rounded-2xl overflow-hidden border-2 border-war-medium/50 shadow-2xl">
+        
+        <!-- Video con poster -->
+        <video 
+          id="showcase-video"
+          class="w-full h-full object-cover"
+          poster="/images/samples2/soldier-4771925_1280.jpg"
+          preload="metadata"
+          controls
+        >
+          <source src="/videos/hero/c0d18810-c140-4d32-82e6-4ce0a1f42444.MP4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+
+        <!-- Botón de play personalizado (se oculta cuando se reproduce) -->
+        <div id="custom-play-btn" class="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm cursor-pointer transition-all duration-300 hover:bg-black/40">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 bg-war-light/90 rounded-full flex items-center justify-center shadow-2xl transform transition-all duration-300 hover:scale-110 hover:bg-war-white">
+            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-war-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to action potente -->
+    <div class="text-center">
+      <div class="max-w-4xl mx-auto mb-8">
+        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-black mb-4 text-war-white uppercase">
+          ¿LISTO PARA SER EL PROTAGONISTA?
+        </h3>
+        <p class="text-base sm:text-lg text-war-light leading-relaxed">
+          Lo que acabas de ver no es una demostración. Es una experiencia real que puedes vivir. 
+          Diseña tu propia misión y conviértete en el protagonista de tu propia historia de combate.
+        </p>
+      </div>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#personalizar" class="group px-8 py-4 bg-war-warm text-black border-2 border-war-warm font-bold text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-transparent hover:text-war-warm">
+          <span class="relative z-10">🎯 Diseña tu experiencia</span>
+        </a>
+        
+        <a href="#galeria" class="group px-8 py-4 bg-transparent text-war-light border-2 border-war-light font-bold text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-war-light hover:text-war-primary">
+          <span class="relative z-10">📸 Ver más videos</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Elementos decorativos -->
+  <div class="absolute top-20 left-10 opacity-30 hidden lg:block">
+    <div class="w-24 h-24 border-2 border-war-warm rotate-45 animate-pulse"></div>
+  </div>
+  
+  <div class="absolute bottom-20 right-10 opacity-30 hidden lg:block">
+    <div class="w-20 h-20 border-2 border-war-gold"></div>
+  </div>
+
+  <!-- Líneas decorativas -->
+  <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-war-warm to-transparent"></div>
+  <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-war-gold to-transparent"></div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('showcase-video') as HTMLVideoElement;
+    const customPlayBtn = document.getElementById('custom-play-btn');
+    const fullscreenBtn = document.getElementById('fullscreen-btn');
+    const qualityBtn = document.getElementById('quality-btn');
+    const durationSpan = document.getElementById('video-duration');
+
+    if (!video) return;
+
+    // Manejar botón de play personalizado
+    if (customPlayBtn) {
+      customPlayBtn.addEventListener('click', () => {
+        video.play();
+        customPlayBtn.style.display = 'none';
+      });
+    }
+
+    // Mostrar/ocultar botón de play personalizado
+    video.addEventListener('play', () => {
+      if (customPlayBtn) customPlayBtn.style.display = 'none';
+    });
+
+    video.addEventListener('pause', () => {
+      if (customPlayBtn) customPlayBtn.style.display = 'flex';
+    });
+
+    video.addEventListener('ended', () => {
+      if (customPlayBtn) customPlayBtn.style.display = 'flex';
+    });
+
+    // Actualizar duración del video
+    video.addEventListener('loadedmetadata', () => {
+      if (durationSpan) {
+        const minutes = Math.floor(video.duration / 60);
+        const seconds = Math.floor(video.duration % 60);
+        durationSpan.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+      }
+    });
+
+    // Botón de pantalla completa
+    if (fullscreenBtn) {
+      fullscreenBtn.addEventListener('click', () => {
+        if (video.requestFullscreen) {
+          video.requestFullscreen();
+        } else if ((video as any).webkitRequestFullscreen) {
+          (video as any).webkitRequestFullscreen();
+        } else if ((video as any).msRequestFullscreen) {
+          (video as any).msRequestFullscreen();
+        }
+      });
+    }
+
+    // Botón de calidad (placeholder para funcionalidad futura)
+    if (qualityBtn) {
+      qualityBtn.addEventListener('click', () => {
+        // Aquí podrías implementar cambio de calidad si tienes múltiples versiones
+        qualityBtn.textContent = qualityBtn.textContent === '🎬 HD Quality' ? '🎬 4K Quality' : '🎬 HD Quality';
+      });
+    }
+
+    // Intersection Observer para autoplay cuando sea visible
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && video.paused) {
+          // Opcional: reproducir automáticamente cuando sea visible
+          // video.play();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(video);
+  });
+</script>
+
+<style>
+  /* Efectos visuales adicionales */
+  #showcase-video {
+    filter: contrast(1.1) saturate(1.1);
+  }
+
+  /* Animación sutil del botón de play */
+  #custom-play-btn svg {
+    animation: pulse-play 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-play {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  /* Efecto de brillo en el video */
+  .aspect-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    animation: video-shine 4s linear infinite;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  @keyframes video-shine {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    #custom-play-btn .w-20 {
+      width: 4rem;
+      height: 4rem;
+    }
+    
+    #custom-play-btn svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+</style> 
