@@ -134,7 +134,65 @@ const testimonials = {
     </div>
 
     <!-- Masonry Grid al estilo Flowbite -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+    <!-- Vista móvil: Scroll horizontal -->
+    <div class="block md:hidden mb-16">
+      <div class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth [-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        {/* Combinamos todos los testimonios en un array para móviles */}
+        {[...testimonials.column1, ...testimonials.column2, ...testimonials.column3, ...testimonials.column4].map((testimonial) => (
+          <div class="flex-none w-80 snap-center">
+            <div class="group relative h-full">
+              <div class="bg-war-primary/90 backdrop-blur-sm border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02] h-full">
+                
+                <!-- Header con avatar y datos -->
+                <div class="flex items-center mb-4">
+                  <img 
+                    src={testimonial.avatar} 
+                    alt={testimonial.name}
+                    class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-face"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center gap-2">
+                      <h4 class="font-bold text-war-white text-sm">{testimonial.name}</h4>
+                      {testimonial.verified && (
+                        <div class="bg-war-warm/20 text-war-warm text-xs px-2 py-1 rounded-full border border-war-warm/30">
+                          ✓ VERIFICADO
+                        </div>
+                      )}
+                    </div>
+                    <p class="text-war-light/70 text-xs">{testimonial.country}</p>
+                  </div>
+                </div>
+
+                <!-- Contenido del testimonio -->
+                <div class="mb-4">
+                  <p class="text-war-light leading-relaxed text-sm mb-3">
+                    "{testimonial.text}"
+                  </p>
+                  
+                  <!-- Tag de experiencia -->
+                  <div class="inline-block bg-war-cool/20 text-war-cool text-xs px-3 py-1 rounded-full border border-war-cool/30">
+                    {testimonial.experience}
+                  </div>
+                </div>
+
+                <!-- Rating -->
+                <div class="flex items-center gap-1 text-war-gold">
+                  <span class="font-mono text-sm font-black">[ ★★★★★ ]</span>
+                  <span class="text-xs text-war-medium ml-2">5.0</span>
+                </div>
+
+                <!-- Efecto de hover -->
+                <div class="absolute inset-0 rounded-lg bg-gradient-to-r from-war-warm/0 via-war-warm/5 to-war-warm/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      
+    </div>
+
+    <!-- Vista desktop: Grid original -->
+    <div class="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
       
       <!-- Columna 1 -->
       <div class="grid gap-4">
