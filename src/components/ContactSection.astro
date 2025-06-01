@@ -13,70 +13,15 @@
       
       <!-- Botones de acción rápida -->
       <div class="flex flex-col md:flex-row gap-4 justify-center mb-16">
-        <a href="#formulario" class="inline-block px-8 py-4 bg-war-light border-2 border-war-light text-war-primary font-bold text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-transparent hover:text-war-light">
-          [ INICIO ] Contacta ahora
-        </a>
-        <a href="tel:+48XXXXXXX" class="inline-block px-8 py-4 border-2 border-war-medium text-war-light bg-transparent font-bold text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-war-medium hover:text-war-white">
-          [ DIRECT ] Llama directamente
+        <a href="https://wa.me/34646640511" class="inline-block px-8 py-4 bg-war-light border-2 border-war-light text-war-primary font-bold text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-transparent hover:text-war-light">
+          [ INICIO ] Contacta ahora (WhatsApp)
         </a>
       </div>
     </div>
 
     <!-- Grid principal de contacto -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-      
-      <!-- Formulario de contacto -->
-      <div id="formulario" class="lg:col-span-2">
-        <div class="p-8 border-2 border-war-medium bg-war-primary/60">
-          <h3 class="text-2xl font-bold mb-6 uppercase tracking-wider text-war-white">
-            Personaliza tu experiencia
-          </h3>
-          
-          <form class="space-y-6">
-            <!-- Nombre -->
-            <div>
-              <label for="nombre-completo" class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Nombre completo</label>
-              <input type="text" id="nombre-completo" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="Tu nombre" required>
-            </div>
-            
-            <!-- Email -->
-            <div>
-              <label for="email-contacto" class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Email</label>
-              <input type="email" id="email-contacto" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="tu@email.com" required>
-            </div>
-            
-            <!-- Teléfono -->
-            <div>
-              <label for="telefono-contacto" class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Teléfono</label>
-              <input type="tel" id="telefono-contacto" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium focus:outline-none focus:border-war-white" placeholder="+34 600 000 000" required>
-            </div>
-            
-            <!-- Experiencia deseada -->
-            <div>
-              <label for="experiencia-deseada" class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">¿Qué tipo de experiencia estás buscando?</label>
-              <textarea rows="4" id="experiencia-deseada" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white placeholder-war-medium resize-none focus:outline-none focus:border-war-white" placeholder="Cuéntanos en una frase..." required></textarea>
-            </div>
-            
-            <!-- Nivel de experiencia -->
-            <div>
-              <label for="experiencia-nivel" class="block text-sm font-bold mb-2 uppercase tracking-wider text-war-light">Nivel de experiencia</label>
-              <select id="experiencia-nivel" class="w-full px-4 py-3 bg-war-primary border border-war-medium rounded text-war-white focus:outline-none focus:border-war-white" aria-describedby="experiencia-nivel-desc">
-                <option value="" class="bg-war-primary">Selecciona tu nivel</option>
-                <option value="principiante" class="bg-war-primary">Principiante - Sin experiencia previa</option>
-                <option value="intermedio" class="bg-war-primary">Intermedio - Algo de experiencia</option>
-                <option value="avanzado" class="bg-war-primary">Avanzado - Experiencia militar/tiro</option>
-              </select>
-              <span id="experiencia-nivel-desc" class="sr-only">Selecciona tu nivel de experiencia con armas y combate militar</span>
-            </div>
-            
-            <!-- Botón de envío -->
-            <button type="submit" class="w-full px-8 py-4 bg-war-light border-2 border-war-light text-war-primary font-bold text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 hover:bg-transparent hover:text-war-light">
-              [ SEND ] Enviar solicitud
-            </button>
-          </form>
-        </div>
-      </div>
-      
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
+
       <!-- Métodos de contacto -->
       <div class="space-y-8">
         
@@ -88,17 +33,17 @@
           
           <div class="space-y-4">
             <!-- WhatsApp -->
-            <div class="flex items-center p-4 border border-war-medium bg-war-light/10 transition-all duration-300 hover:scale-105 cursor-pointer">
+            <div class="flex items-center p-4 border border-war-medium bg-war-light/10 transition-all duration-300 hover:scale-105 hover:bg-war-light/20 cursor-pointer">
               <span class="text-xl mr-4 font-mono font-black text-war-light">[ WA ]</span>
               <div>
                 <h4 class="font-bold text-war-white">WhatsApp</h4>
                 <p class="text-sm text-war-light">Respuesta inmediata</p>
-                <p class="text-xs text-war-gold">+48 XXX XXX XXX</p>
+                <p class="text-xs text-war-gold">+34 646640511</p>
               </div>
             </div>
             
             <!-- Email -->
-            <div class="flex items-center p-4 border border-war-medium bg-war-light/10 transition-all duration-300 hover:scale-105 cursor-pointer">
+            <div class="flex items-center p-4 border border-war-medium bg-war-light/10 transition-all duration-300 hover:scale-105 hover:bg-war-light/20 cursor-pointer">
               <span class="text-xl mr-4 font-mono font-black text-war-light">[ @@ ]</span>
               <div>
                 <h4 class="font-bold text-war-white">Email</h4>
@@ -108,7 +53,7 @@
             </div>
             
             <!-- Ubicación -->
-            <div class="flex items-center p-4 border border-war-medium bg-war-light/10 transition-all duration-300 hover:scale-105">
+            <div class="flex items-center p-4 border border-war-medium bg-war-light/10 transition-all duration-300 hover:scale-105 hover:bg-war-light/20">
               <span class="text-xl mr-4 font-mono font-black text-war-light">[ GPS ]</span>
               <div>
                 <h4 class="font-bold text-war-white">Ubicación</h4>
@@ -118,8 +63,10 @@
             </div>
           </div>
         </div>
+      </div>
         
-        <!-- Información adicional -->
+      <!-- Información adicional -->
+      <div class="space-y-8">
         <div class="p-8 border-2 border-war-medium bg-war-blue/20">
           <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-war-white">
             Lo que incluye tu experiencia
@@ -140,6 +87,21 @@
             </div>
           </div>
         </div>
+
+        <!-- Nueva sección de llamada a la acción -->
+        <div class="p-8 border-2 border-war-light bg-war-light/10">
+          <h3 class="text-xl font-bold mb-4 uppercase tracking-wider text-war-white">
+            ¿Listo para la acción?
+          </h3>
+          <p class="text-sm text-war-light mb-6">
+            Hablemos directamente y diseñemos tu experiencia perfecta. Sin formularios, sin esperas.
+          </p>
+          <div class="space-y-3">
+            <a href="https://wa.me/34646640511" class="block w-full px-6 py-3 bg-war-light text-war-primary font-bold text-center uppercase tracking-wider transition-all duration-300 hover:bg-war-white">
+              [ WA ] Mensaje directo
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -147,7 +109,7 @@
     <div class="mt-16 text-center">
       <div class="p-6 text-center border border-war-medium bg-war-medium/10">
         <p class="text-xs text-war-light">
-          <span class="font-mono font-black text-war-gold">[PHONE]</span> <strong>Respuesta inmediata</strong> por WhatsApp • <span class="font-mono font-black text-war-gold">[EMAIL]</span> <strong>Consultas detalladas</strong> por email • <span class="font-mono font-black text-war-gold">[CUSTOM]</span> <strong>Experiencias personalizadas</strong> a medida
+          <span class="font-mono font-black text-war-gold hover:animate-pulse transition-all duration-300">[PHONE]</span> <strong>Respuesta inmediata</strong> por WhatsApp • <span class="font-mono font-black text-war-gold hover:animate-pulse transition-all duration-300">[EMAIL]</span> <strong>Consultas detalladas</strong> por email • <span class="font-mono font-black text-war-gold hover:animate-pulse transition-all duration-300">[CUSTOM]</span> <strong>Experiencias personalizadas</strong> a medida
         </p>
       </div>
     </div>
@@ -155,55 +117,3 @@
   </div>
 
 </section>
-
-<script>
-  // Funcionalidad del formulario
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form') as HTMLFormElement;
-    const inputs = form.querySelectorAll('input, textarea, select') as NodeListOf<HTMLElement>;
-    
-    // Efecto focus en inputs
-    inputs.forEach(input => {
-      input.addEventListener('focus', function(this: HTMLElement) {
-        this.style.borderColor = '#B0AAA6';
-        this.style.boxShadow = '0 0 0 2px rgba(176, 170, 166, 0.2)';
-      });
-      
-      input.addEventListener('blur', function(this: HTMLElement) {
-        this.style.borderColor = '#605E5D';
-        this.style.boxShadow = 'none';
-      });
-    });
-    
-    // Envío del formulario
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      // Aquí iría la lógica de envío
-      alert('¡Formulario enviado! Te contactaremos en 24h.');
-    });
-  });
-</script>
-
-<style>
-  /* Placeholders personalizados */
-  input::placeholder,
-  textarea::placeholder {
-    color: #605E5D;
-    opacity: 1;
-  }
-  
-  /* Efectos hover para las cards de contacto */
-  .cursor-pointer:hover {
-    background: rgba(176, 170, 166, 0.2) !important;
-  }
-  
-  /* Animación para los microcopies */
-  @keyframes pulse-border {
-    0%, 100% { border-color: #605E5D; }
-    50% { border-color: #B0AAA6; }
-  }
-  
-  .microcopies span:hover {
-    animation: pulse-border 1s ease-in-out infinite;
-  }
-</style> 
