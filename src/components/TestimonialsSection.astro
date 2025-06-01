@@ -83,7 +83,7 @@ const testimonials = {
       avatar: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=100&h=100&fit=crop&crop=face",
       name: "Elena",
       country:"España",
-      text: "Team building corporativo con simulacro de rescate. Brutal! [OPERACIÓN AÉREA]",
+      text: "Team building corporativo con simulacro de rescate. Brutal!",
       verified: true,
       experience: "Team Building"
     }
@@ -141,14 +141,14 @@ const testimonials = {
         {[...testimonials.column1, ...testimonials.column2, ...testimonials.column3, ...testimonials.column4].map((testimonial) => (
           <div class="flex-none w-80 snap-center">
             <div class="group relative h-full">
-              <div class="bg-war-primary/90 backdrop-blur-sm border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02] h-full">
+              <div class="bg-war-primary/90  border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02] h-full">
                 
                 <!-- Header con avatar y datos -->
                 <div class="flex items-center mb-4">
                   <img 
                     src={testimonial.avatar} 
                     alt={testimonial.name}
-                    class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-face"
+                    class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-xs hover:blur-none transition-all duration-300"
                   />
                   <div class="flex-1">
                     <div class="flex items-center gap-2">
@@ -198,14 +198,14 @@ const testimonials = {
       <div class="grid gap-4">
         {testimonials.column1.map((testimonial) => (
           <div class="group relative">
-            <div class="bg-war-primary/90 backdrop-blur-sm border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02]">
+            <div class="bg-war-primary/90  border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02]">
               
               <!-- Header con avatar y datos -->
               <div class="flex items-center mb-4">
                 <img 
                   src={testimonial.avatar} 
                   alt={testimonial.name}
-                  class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-face"
+                  class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-xs hover:blur-none transition-all duration-300"
                 />
                 <div class="flex-1">
                   <div class="flex items-center gap-2">
@@ -249,14 +249,14 @@ const testimonials = {
       <div class="grid gap-4">
         {testimonials.column2.map((testimonial) => (
           <div class="group relative">
-            <div class="bg-war-primary/90 backdrop-blur-sm border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02]">
+            <div class="bg-war-primary/90  border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02]">
               
               <!-- Header con avatar y datos -->
               <div class="flex items-center mb-4">
                 <img 
                   src={testimonial.avatar} 
                   alt={testimonial.name}
-                  class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-face"
+                  class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-xs hover:blur-none transition-all duration-300"
                 />
                 <div class="flex-1">
                   <div class="flex items-center gap-2">
@@ -300,14 +300,14 @@ const testimonials = {
       <div class="grid gap-4">
         {testimonials.column3.map((testimonial) => (
           <div class="group relative">
-            <div class="bg-war-primary/90 backdrop-blur-sm border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02]">
+            <div class="bg-war-primary/90  border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02]">
               
               <!-- Header con avatar y datos -->
               <div class="flex items-center mb-4">
                 <img 
                   src={testimonial.avatar} 
                   alt={testimonial.name}
-                  class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-face"
+                  class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-xs hover:blur-none transition-all duration-300"
                 />
                 <div class="flex-1">
                   <div class="flex items-center gap-2">
@@ -351,14 +351,14 @@ const testimonials = {
       <div class="grid gap-4">
         {testimonials.column4.map((testimonial) => (
           <div class="group relative">
-            <div class="bg-war-primary/90 backdrop-blur-sm border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02]">
+            <div class="bg-war-primary/90  border border-war-medium/30 rounded-lg p-6 transition-all duration-300 hover:border-war-warm/50 hover:bg-war-primary/95 hover:transform hover:scale-[1.02]">
               
               <!-- Header con avatar y datos -->
               <div class="flex items-center mb-4">
                 <img 
                   src={testimonial.avatar} 
                   alt={testimonial.name}
-                  class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-face"
+                  class="w-12 h-12 rounded-full object-cover mr-3 ring-2 ring-war-medium/30 blur-xs hover:blur-none transition-all duration-300"
                 />
                 <div class="flex-1">
                   <div class="flex items-center gap-2">
