@@ -30,8 +30,18 @@
           <!-- Slider visual -->
           <div class="relative">
             <div class="flex justify-between mb-4">
-              <span class="text-sm font-medium text-war-light font-mono">[LOW] Relajado</span>
-              <span class="text-sm font-medium text-war-warm font-mono">[MAX] Inmersivo total</span>
+              <span class="text-sm font-medium text-war-light font-mono flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+                Relajado
+              </span>
+              <span class="text-sm font-medium text-war-warm font-mono flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+                Inmersivo total
+              </span>
             </div>
             <div class="w-full h-2 rounded-full bg-war-medium">
               <div class="h-2 rounded-full transition-all duration-300 bg-gradient-to-r from-war-light to-war-warm" style="width: 70%;"></div>
@@ -42,7 +52,9 @@
           <div class="grid grid-cols-1 gap-4">
             <div class="p-4 border border-war-medium bg-war-light/10 transition-all duration-300 hover:scale-105 cursor-pointer">
               <div class="flex items-center">
-                <span class="text-lg mr-3 font-mono font-black text-war-light">[01]</span>
+                <svg class="w-6 h-6 mr-3 text-war-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
                 <div>
                   <h4 class="font-bold text-war-white">Iniciación</h4>
                   <p class="text-sm text-war-light">Perfecto para principiantes. Enfoque en aprendizaje y seguridad.</p>
@@ -52,7 +64,9 @@
             
             <div class="p-4 border border-war-gold bg-war-gold/10 transition-all duration-300 hover:scale-105 cursor-pointer">
               <div class="flex items-center">
-                <span class="text-lg mr-3 font-mono font-black text-war-gold">[02]</span>
+                <svg class="w-6 h-6 mr-3 text-war-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
                 <div>
                   <h4 class="font-bold text-war-white">Intermedio</h4>
                   <p class="text-sm text-war-light">Equilibrio entre adrenalina y control. Experiencia completa.</p>
@@ -62,7 +76,10 @@
             
             <div class="p-4 border border-war-warm bg-war-warm/10 transition-all duration-300 hover:scale-105 cursor-pointer">
               <div class="flex items-center">
-                <span class="text-lg mr-3 font-mono font-black text-war-warm">[03]</span>
+                <svg class="w-6 h-6 mr-3 text-war-warm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                </svg>
                 <div>
                   <h4 class="font-bold text-war-white">Inmersivo Total</h4>
                   <p class="text-sm text-war-light">Máximo realismo. Para experimentados que buscan el límite.</p>
@@ -82,7 +99,9 @@
         <div class="grid grid-cols-1 gap-4">
           <div class="p-4 border border-war-medium transition-all duration-300 hover:scale-105 cursor-pointer group">
             <div class="flex items-center">
-              <span class="text-lg mr-3 font-mono font-black text-war-light">[SHORT]</span>
+              <svg class="w-6 h-6 mr-3 text-war-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg>
               <div class="flex-1">
                 <h4 class="font-bold text-war-light group-hover:text-war-white transition-colors">Arma corta</h4>
                 <p class="text-sm text-war-medium">Pistolas y subfusiles</p>
@@ -92,7 +111,9 @@
           
           <div class="p-4 border border-war-medium transition-all duration-300 hover:scale-105 cursor-pointer group">
             <div class="flex items-center">
-              <span class="text-lg mr-3 font-mono font-black text-war-light">[LONG]</span>
+              <svg class="w-6 h-6 mr-3 text-war-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
               <div class="flex-1">
                 <h4 class="font-bold text-war-light group-hover:text-war-white transition-colors">Arma larga</h4>
                 <p class="text-sm text-war-medium">Rifles de asalto y ametralladoras</p>
@@ -102,7 +123,10 @@
           
           <div class="p-4 border border-war-medium transition-all duration-300 hover:scale-105 cursor-pointer group">
             <div class="flex items-center">
-              <span class="text-lg mr-3 font-mono font-black text-war-light">[PREC]</span>
+              <svg class="w-6 h-6 mr-3 text-war-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
               <div class="flex-1">
                 <h4 class="font-bold text-war-light group-hover:text-war-white transition-colors">Rifle de precisión</h4>
                 <p class="text-sm text-war-medium">Francotiradores y rifles de largo alcance</p>
@@ -112,7 +136,9 @@
           
           <div class="p-4 border border-war-medium transition-all duration-300 hover:scale-105 cursor-pointer group">
             <div class="flex items-center">
-              <span class="text-lg mr-3 font-mono font-black text-war-light">[SPEC]</span>
+              <svg class="w-6 h-6 mr-3 text-war-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
               <div class="flex-1">
                 <h4 class="font-bold text-war-light group-hover:text-war-white transition-colors">Armas especiales</h4>
                 <p class="text-sm text-war-medium">Lanzagranadas y armas tácticas especiales</p>
@@ -128,7 +154,9 @@
       
       <!-- Armamento -->
       <div class="text-center p-6 border border-war-medium bg-war-medium/10 transition-all duration-300 hover:scale-105">
-        <div class="text-2xl mb-4 font-mono font-black text-war-light">[ WEAPON ]</div>
+        <svg class="w-8 h-8 mx-auto mb-4 text-war-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+        </svg>
         <h4 class="text-lg font-bold mb-3 uppercase text-war-white">Armamento</h4>
         <div class="text-sm space-y-2 text-war-light">
           <div>• Equipamiento de última generación</div>
@@ -142,7 +170,9 @@
       
       <!-- Vehículos -->
       <div class="text-center p-6 border border-war-medium bg-war-medium/10 transition-all duration-300 hover:scale-105">
-        <div class="text-2xl mb-4 font-mono font-black text-war-light">[ VEHICLE ]</div>
+        <svg class="w-8 h-8 mx-auto mb-4 text-war-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        </svg>
         <h4 class="text-lg font-bold mb-3 uppercase text-war-white">Vehículos</h4>
         <div class="text-sm space-y-2 text-war-light">
           <div class="font-bold text-war-white">Aeronaves</div>
@@ -159,7 +189,9 @@
       
       <!-- Duración -->
       <div class="text-center p-6 border border-war-medium bg-war-medium/10 transition-all duration-300 hover:scale-105">
-        <div class="text-2xl mb-4 font-mono font-black text-war-light">[ TIME ]</div>
+        <svg class="w-8 h-8 mx-auto mb-4 text-war-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
         <h4 class="text-lg font-bold mb-3 uppercase text-war-white">Duración</h4>
         <div class="text-sm space-y-2 text-war-light">
           <div>• 1 día</div>
@@ -170,7 +202,9 @@
 
       <!-- Experiencia Completa -->
       <div class="text-center p-6 border border-war-medium bg-war-medium/10 transition-all duration-300 hover:scale-105">
-        <div class="text-2xl mb-4 font-mono font-black text-war-light">[ VIP ]</div>
+        <svg class="w-8 h-8 mx-auto mb-4 text-war-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+        </svg>
         <h4 class="text-lg font-bold mb-3 uppercase text-war-white">Experiencia Completa</h4>
         <div class="text-sm space-y-2 text-war-light">
           <div>• Transporte desde aeropuerto</div>
@@ -182,8 +216,11 @@
 
     <!-- CTA secundario -->
     <div class="text-center">
-      <a href="#contacto" class="px-4 md:px-8 py-3 md:py-4 border-2 border-war-light text-sm md:text-lg font-bold uppercase tracking-wide md:tracking-wider text-war-light bg-transparent transition-all duration-300 transform hover:scale-105 hover:bg-war-light hover:text-war-primary">
-        [ CONTACT ] Habla con tu asesor
+      <a href="#contacto" class="px-4 md:px-8 py-3 md:py-4 border-2 border-war-light text-sm md:text-lg font-bold uppercase tracking-wide md:tracking-wider text-war-light bg-transparent transition-all duration-300 transform hover:scale-105 hover:bg-war-light hover:text-war-primary flex items-center justify-center mx-auto w-fit">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+        </svg>
+        Habla con tu asesor
       </a>
     </div>
 
