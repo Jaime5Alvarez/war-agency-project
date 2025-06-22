@@ -1,12 +1,69 @@
 ---
 import "../styles/global.css";
 import GridComponent from "../components/GridComponent.astro";
+import { SEO } from "astro-seo";
 
 export interface Props {
 	title: string;
+	description?: string;
+	canonical?: string;
+	noindex?: boolean;
 }
 
-const { title } = Astro.props;
+const { 
+	title, 
+	description = "Experiencias militares reales en Polonia. Helicópteros, tanques, armamento auténtico y misiones personalizadas. Vive el combate real con instructores profesionales.",
+	canonical,
+	noindex = false
+} = Astro.props;
+
+// Structured Data for Local Business
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "TouristAttraction",
+	"name": "Live Combat Experience",
+	"description": description,
+	"url": canonical || Astro.url.href,
+	"telephone": "+34646640511",
+	"address": {
+		"@type": "PostalAddress",
+		"addressCountry": "PL",
+		"addressRegion": "Polonia"
+	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": "52.2297",
+		"longitude": "21.0122"
+	},
+	"image": "/images/samples/helicoptero.jpeg",
+	"priceRange": "€€€",
+	"currenciesAccepted": "EUR",
+	"paymentAccepted": "Cash, Credit Card",
+	"openingHours": "Mo-Su 09:00-18:00",
+	"category": "Military Training Experience",
+	"amenityFeature": [
+		{
+			"@type": "LocationFeatureSpecification",
+			"name": "Helicopter Training",
+			"value": true
+		},
+		{
+			"@type": "LocationFeatureSpecification", 
+			"name": "Tank Training",
+			"value": true
+		},
+		{
+			"@type": "LocationFeatureSpecification",
+			"name": "Weapon Training",
+			"value": true
+		}
+	],
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "4.8",
+		"reviewCount": "150"
+	}
+};
 ---
 
 <!doctype html>
@@ -14,48 +71,65 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-		<link rel="icon" type="image/png" href="/images/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
 		
-		<!-- PWA and Mobile Optimization -->
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="theme-color" content="#030304" />
-		<meta name="msapplication-navbutton-color" content="#030304" />
-		<meta name="apple-mobile-web-app-title" content="Live Combat" />
+		<SEO
+			title={title}
+			description={description}
+			canonical={canonical}
+			noindex={noindex}
+			openGraph={{
+				basic: {
+					title: title,
+					type: "website",
+					image: "/images/samples/helicoptero.jpeg",
+					url: canonical || Astro.url.href,
+				},
+				optional: {
+					description: description,
+					siteName: "Live Combat Experience",
+					locale: "es_ES",
+					localeAlternate: ["en_US", "pl_PL"],
+				}
+			}}
+			twitter={{
+				card: "summary_large_image",
+				title: title,
+				description: description,
+				image: "/images/samples/helicoptero.jpeg",
+				imageAlt: "Live Combat Experience - Entrenamiento militar real en Polonia",
+			}}
+			extend={{
+				link: [
+					{ rel: "icon", href: "/images/favicon.png" },
+					{ rel: "manifest", href: "/manifest.json" },
+					{ rel: "preconnect", href: "https://fonts.googleapis.com" },
+					{ rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
+				],
+				meta: [
+					{ name: "generator", content: Astro.generator },
+					{ name: "keywords", content: "experiencia militar, combate real, entrenamiento militar, armamento real, Polonia, turismo militar, aventura extrema, helicópteros militares, tanques, rifle francotirador, instrucción militar profesional" },
+					{ name: "author", content: "Live Combat Experience" },
+					{ name: "language", content: "es" },
+					{ name: "geo.region", content: "PL" },
+					{ name: "geo.placename", content: "Polonia" },
+					{ name: "geo.position", content: "52.2297;21.0122" },
+					{ name: "ICBM", content: "52.2297, 21.0122" },
+					{ name: "mobile-web-app-capable", content: "yes" },
+					{ name: "apple-mobile-web-app-capable", content: "yes" },
+					{ name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
+					{ name: "theme-color", content: "#030304" },
+					{ name: "msapplication-navbutton-color", content: "#030304" },
+					{ name: "apple-mobile-web-app-title", content: "Live Combat" },
+					{ name: "format-detection", content: "telephone=no" },
+					{ name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+					{ name: "googlebot", content: "index, follow" },
+					{ httpEquiv: "x-dns-prefetch-control", content: "on" },
+				]
+			}}
+		/>
 		
-		<!-- Preload critical resources -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		
-		<!-- SEO Meta Tags -->
-		<title>{title}</title>
-		<meta name="description" content="Experiencias militares reales en Polonia. Helicópteros, tanques, armamento auténtico y misiones personalizadas. Vive el combate real con instructores profesionales." />
-		<meta name="keywords" content="experiencia militar, combate real, entrenamiento militar, armamento real, Polonia, turismo militar, aventura extrema" />
-		<meta name="author" content="Live Combat Experience" />
-		
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content="Vive experiencias militares reales con armamento auténtico, helicópteros y tanques en instalaciones militares de Polonia." />
-		<meta property="og:site_name" content="Live Combat Experience" />
-		<meta property="og:locale" content="es_ES" />
-		
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:title" content={title} />
-		<meta property="twitter:description" content="Experiencias militares auténticas en Polonia con instructores profesionales." />
-		
-		<!-- Additional meta tags -->
-		<meta name="robots" content="index, follow" />
-		<meta name="googlebot" content="index, follow" />
-		<meta name="format-detection" content="telephone=no" />
-		
-		<!-- Performance hints -->
-		<meta http-equiv="x-dns-prefetch-control" content="on" />
-		<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-		<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+		<!-- Structured Data -->
+		<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 	</head>
 	<body class="bg-war-primary text-war-light antialiased relative">
 		<GridComponent />

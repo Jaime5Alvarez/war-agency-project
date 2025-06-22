@@ -11,9 +11,18 @@ import FAQSection from '../components/FAQSection.astro';
 import ContactSection from '../components/ContactSection.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+// SEO optimized content
+const pageTitle = "Live Combat Experience - Vive el Combate Real en Polonia";
+const pageDescription = "Experiencias militares reales en Polonia con helicópteros, tanques y armamento auténtico. Entrenamiento militar profesional con instructores expertos. Reserva tu aventura extrema ahora.";
+const canonicalURL = Astro.url.href;
 ---
 
-<Layout title="Live Combat Experience - Vive el Combate Real">
+<Layout 
+	title={pageTitle}
+	description={pageDescription}
+	canonical={canonicalURL}
+>
 	<Navigation />
 	<main id="inicio">
 		<HeroSection />
