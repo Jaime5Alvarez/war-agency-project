@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://yourdomain.com', // Cambia esto por tu dominio real
+  site: 'https://www.livecombatexperience.com/', // Cambia esto por tu dominio real
   integrations: [
     sitemap({
       changefreq: 'weekly',
@@ -14,7 +14,7 @@ export default defineConfig({
       lastmod: new Date(),
       serialize(item) {
         // Personalizar entradas del sitemap
-        if (item.url === 'https://yourdomain.com/') {
+        if (item.url === 'https://www.livecombatexperience.com//') {
           item.priority = 1.0;
         }
         return item;
